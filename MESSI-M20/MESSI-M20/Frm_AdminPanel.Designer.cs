@@ -1,7 +1,7 @@
 ﻿
 namespace MESSI_M20
 {
-    partial class formLogin
+    partial class Frm_AdminPanel
     {
         /// <summary>
         /// Required designer variable.
@@ -29,21 +29,32 @@ namespace MESSI_M20
         /// </summary>
         private void InitializeComponent()
         {
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // formLogin
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(338, 209);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 41);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Soy admin";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Frm_AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "formLogin";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "formLogin";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.formLogin_FormClosing);
+            this.Controls.Add(this.button1);
+            this.Name = "Frm_AdminPanel";
+            this.Text = "Frm_AdminPanel";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
     }
 }

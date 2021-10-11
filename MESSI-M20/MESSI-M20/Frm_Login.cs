@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MESSI_M20
 {
-    public partial class formLogin : Form
+    public partial class Frm_Login : Form
     {
-        public formLogin()
+        public Frm_Login()
         {
             InitializeComponent();
         }

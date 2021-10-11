@@ -52,37 +52,46 @@
     <Compile Include="Frm_Admin.Designer.cs">
       <DependentUpon>Frm_Admin.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Users.cs">
+    <Compile Include="Frm_AdminPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Users.Designer.cs">
-      <DependentUpon>frm_Users.cs</DependentUpon>
+    <Compile Include="Frm_AdminPanel.Designer.cs">
+      <DependentUpon>Frm_AdminPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="formLogin.cs">
+    <Compile Include="Frm_Users.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formLogin.Designer.cs">
-      <DependentUpon>formLogin.cs</DependentUpon>
+    <Compile Include="Frm_Users.Designer.cs">
+      <DependentUpon>Frm_Users.cs</DependentUpon>
     </Compile>
-    <Compile Include="formSplash.cs">
+    <Compile Include="Frm_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formSplash.Designer.cs">
-      <DependentUpon>formSplash.cs</DependentUpon>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Splash.Designer.cs">
+      <DependentUpon>Frm_Splash.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Frm_Admin.resx">
       <DependentUpon>Frm_Admin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Users.resx">
-      <DependentUpon>frm_Users.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_AdminPanel.resx">
+      <DependentUpon>Frm_AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formLogin.resx">
-      <DependentUpon>formLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_Users.resx">
+      <DependentUpon>Frm_Users.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formSplash.resx">
-      <DependentUpon>formSplash.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Splash.resx">
+      <DependentUpon>Frm_Splash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace MESSI_M20
 {
-    public partial class formSplash : Form
+    public partial class Frm_Splash : Form
     {
-        public formSplash()
+        public Frm_Splash()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace MESSI_M20
             {
                 timerSplash.Stop();
                 this.Hide();
-                formLogin formLogin = new formLogin();
+                Frm_Login formLogin = new Frm_Login();
                 formLogin.ShowDialog();
             }
         }

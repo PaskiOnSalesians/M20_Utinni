@@ -16,7 +16,7 @@ namespace MESSI_M20
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formSplash());
+            Application.Run(new Frm_Splash());
         }
     }
 }

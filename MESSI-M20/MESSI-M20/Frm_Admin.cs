@@ -16,30 +16,204 @@ namespace MESSI_M20
         public Frm_Admin()
         {
             InitializeComponent();
+
             ArrayList Code_Nums = new ArrayList() {0,1,2,3,4,5,6,7,8,9};
             Queue Encoded_Keypad = new Queue();
-            var rand = new Random();
+            Random rand = new Random();
+            int random_num;
+            int pos;
 
-            while (!Code_Nums.Contains(""))
+            while (Code_Nums.ToString() != "")
             {
-                if (Code_Nums.Contains(rand.Next(0, 10)))
+                random_num = rand.Next(0,10);
+                Console.Write(random_num);
+                if (Code_Nums.Contains(random_num))
                 {
-                    Encoded_Keypad.Enqueue(rand);
-                    Code_Nums.Remove(rand);
+                    pos = Code_Nums.IndexOf(random_num);
+                    Encoded_Keypad.Enqueue(Code_Nums[random_num]);
+                    Code_Nums.Remove(pos);
                 }
             }
 
-            SaveArray(Encoded_Keypad);
+            ImprimirKeypad(SaveArray(Encoded_Keypad));
         }
 
-        private void SaveArray(Queue Keypad)
+        // Guardem la cua a un arraylist
+
+        private ArrayList SaveArray(Queue Keypad)
         {
-                        
+            ArrayList Encoded_Keys = new ArrayList();
+
+            while (Keypad.Count > 0)
+            {
+                Encoded_Keys.Add(Keypad.Peek());
+                Keypad.Dequeue();
+            }
+            return Encoded_Keys;
         }
+
+        // Li posem nom a les tecles
+
+        private void ImprimirKeypad(ArrayList Encoded_Keypad)
+        {
+            int pos = 0;
+            while(pos < 10)
+            {
+                switch (pos)
+                {
+                    case 0:
+                        btn_1.Text = Encoded_Keypad[pos].ToString();
+                        break;
+                    case 1:
+                        btn_2.Text = Encoded_Keypad[pos].ToString();
+                        break;
+                    case 2:
+                        btn_3.Text = Encoded_Keypad[pos].ToString();
+                        break;
+                    case 3:
+                        btn_4.Text = Encoded_Keypad[pos].ToString();
+                        break;
+                    case 4:
+                        btn_5.Text = Encoded_Keypad[pos].ToString();
+                        break;
+                    case 5:
+                        btn_6.Text = Encoded_Keypad[pos].ToString();
+                        break;
+                    case 6:
+                        btn_7.Text = Encoded_Keypad[pos].ToString();
+                        break;
+                    case 7:
+                        btn_8.Text = Encoded_Keypad[pos].ToString();
+                        break;
+                    case 8:
+                        btn_9.Text = Encoded_Keypad[pos].ToString();
+                        break;
+                    case 9:
+                        btn_10.Text = Encoded_Keypad[pos].ToString();
+                        break;
+                }
+                pos++;
+            }
+        }
+
+        // Tancar l'app si tanquem al finestra
 
         private void Frm_Admin_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        // Botons de borrar y login
+
+        private void btn_c_Click(object sender, EventArgs e)
+        {
+            txt_box_code.Text = "";
+        }
+
+        private void btn_plus_Click(object sender, EventArgs e)
+        {
+            if(txt_box_code.Text.ToString() == "1234")
+            {
+                this.Hide();
+                Frm_AdminPanel frm = new Frm_AdminPanel();
+                frm.ShowDialog();
+            }
+        }
+
+        // Botons Keypad
+
+        private void btn_1_Click(object sender, EventArgs e)
+        {
+            if (FullTextBox() == false)
+            {
+                txt_box_code.Text += btn_1.Text;
+            }
+        }
+
+        private void btn_2_Click(object sender, EventArgs e)
+        {
+            if (FullTextBox() == false)
+            {
+                txt_box_code.Text += btn_2.Text;
+            }
+        }
+
+        private void btn_3_Click(object sender, EventArgs e)
+        {
+            if (FullTextBox() == false)
+            {
+                txt_box_code.Text += btn_3.Text;
+            }
+        }
+
+        private void btn_4_Click(object sender, EventArgs e)
+        {
+            if (FullTextBox() == false)
+            {
+                txt_box_code.Text += btn_4.Text;
+            }
+        }
+
+        private void btn_5_Click(object sender, EventArgs e)
+        {
+            if (FullTextBox() == false)
+            {
+                txt_box_code.Text += btn_5.Text;
+            }
+        }
+
+        private void btn_6_Click(object sender, EventArgs e)
+        {
+            if (FullTextBox() == false)
+            {
+                txt_box_code.Text += btn_6.Text;
+            }
+        }
+
+        private void btn_7_Click(object sender, EventArgs e)
+        {
+            if (FullTextBox() == false)
+            {
+                txt_box_code.Text += btn_7.Text;
+            }
+        }
+
+        private void btn_8_Click(object sender, EventArgs e)
+        {
+            if (FullTextBox() == false)
+            {
+                txt_box_code.Text += btn_8.Text;
+            }
+        }
+
+        private void btn_9_Click(object sender, EventArgs e)
+        {
+            if (FullTextBox() == false)
+            {
+                txt_box_code.Text += btn_9.Text;
+            }
+        }
+
+        private void btn_10_Click(object sender, EventArgs e)
+        {
+            if(FullTextBox() == false)
+            {
+                txt_box_code.Text += btn_10.Text;
+            }
+        }
+
+        // Verificar si TextBox on surt la contraseña esta ple
+
+        private Boolean FullTextBox()
+        {
+            if(txt_box_code.TextLength < 4)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

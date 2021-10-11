@@ -1,7 +1,7 @@
 ﻿
 namespace MESSI_M20
 {
-    partial class formSplash
+    partial class Frm_Splash
     {
         /// <summary>
         /// Variable del diseñador necesaria.
