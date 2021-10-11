@@ -33,7 +33,7 @@
             this.txt_box_code = new System.Windows.Forms.TextBox();
             this.pnl_keypad = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btn_plus = new System.Windows.Forms.Button();
+            this.btn_login = new System.Windows.Forms.Button();
             this.btn_10 = new System.Windows.Forms.Button();
             this.btn_c = new System.Windows.Forms.Button();
             this.btn_9 = new System.Windows.Forms.Button();
@@ -46,11 +46,11 @@
             this.btn_2 = new System.Windows.Forms.Button();
             this.btn_1 = new System.Windows.Forms.Button();
             this.pnl_coord = new System.Windows.Forms.Panel();
-            this.txt_box_coord = new System.Windows.Forms.TextBox();
             this.pnl_down = new System.Windows.Forms.Panel();
             this.pnl_up = new System.Windows.Forms.Panel();
             this.pnl_right = new System.Windows.Forms.Panel();
             this.pnl_left = new System.Windows.Forms.Panel();
+            this.lbl_coord = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pnl_code.SuspendLayout();
             this.pnl_keypad.SuspendLayout();
@@ -89,7 +89,7 @@
             this.txt_box_code.Cursor = System.Windows.Forms.Cursors.No;
             this.txt_box_code.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_box_code.Location = new System.Drawing.Point(43, 26);
-            this.txt_box_code.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_box_code.Margin = new System.Windows.Forms.Padding(4);
             this.txt_box_code.MaxLength = 4;
             this.txt_box_code.Name = "txt_box_code";
             this.txt_box_code.PasswordChar = '*';
@@ -114,7 +114,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Controls.Add(this.btn_plus, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btn_login, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.btn_10, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.btn_c, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.btn_9, 2, 2);
@@ -128,7 +128,7 @@
             this.tableLayoutPanel1.Controls.Add(this.btn_1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -138,25 +138,25 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(284, 320);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
-            // btn_plus
+            // btn_login
             // 
-            this.btn_plus.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_plus.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_plus.Location = new System.Drawing.Point(192, 244);
-            this.btn_plus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_plus.Name = "btn_plus";
-            this.btn_plus.Size = new System.Drawing.Size(88, 72);
-            this.btn_plus.TabIndex = 11;
-            this.btn_plus.Text = "*";
-            this.btn_plus.UseVisualStyleBackColor = true;
-            this.btn_plus.Click += new System.EventHandler(this.btn_plus_Click);
+            this.btn_login.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_login.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_login.Location = new System.Drawing.Point(192, 244);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(88, 72);
+            this.btn_login.TabIndex = 11;
+            this.btn_login.Text = "#";
+            this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // btn_10
             // 
             this.btn_10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_10.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_10.Location = new System.Drawing.Point(98, 244);
-            this.btn_10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_10.Margin = new System.Windows.Forms.Padding(4);
             this.btn_10.Name = "btn_10";
             this.btn_10.Size = new System.Drawing.Size(86, 72);
             this.btn_10.TabIndex = 10;
@@ -168,7 +168,7 @@
             this.btn_c.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_c.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_c.Location = new System.Drawing.Point(4, 244);
-            this.btn_c.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_c.Margin = new System.Windows.Forms.Padding(4);
             this.btn_c.Name = "btn_c";
             this.btn_c.Size = new System.Drawing.Size(86, 72);
             this.btn_c.TabIndex = 9;
@@ -181,7 +181,7 @@
             this.btn_9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_9.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_9.Location = new System.Drawing.Point(192, 164);
-            this.btn_9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_9.Margin = new System.Windows.Forms.Padding(4);
             this.btn_9.Name = "btn_9";
             this.btn_9.Size = new System.Drawing.Size(88, 72);
             this.btn_9.TabIndex = 8;
@@ -193,7 +193,7 @@
             this.btn_8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_8.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_8.Location = new System.Drawing.Point(98, 164);
-            this.btn_8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_8.Margin = new System.Windows.Forms.Padding(4);
             this.btn_8.Name = "btn_8";
             this.btn_8.Size = new System.Drawing.Size(86, 72);
             this.btn_8.TabIndex = 7;
@@ -205,7 +205,7 @@
             this.btn_7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_7.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_7.Location = new System.Drawing.Point(4, 164);
-            this.btn_7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_7.Margin = new System.Windows.Forms.Padding(4);
             this.btn_7.Name = "btn_7";
             this.btn_7.Size = new System.Drawing.Size(86, 72);
             this.btn_7.TabIndex = 6;
@@ -217,7 +217,7 @@
             this.btn_6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_6.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_6.Location = new System.Drawing.Point(192, 84);
-            this.btn_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_6.Margin = new System.Windows.Forms.Padding(4);
             this.btn_6.Name = "btn_6";
             this.btn_6.Size = new System.Drawing.Size(88, 72);
             this.btn_6.TabIndex = 5;
@@ -229,7 +229,7 @@
             this.btn_5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_5.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_5.Location = new System.Drawing.Point(98, 84);
-            this.btn_5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_5.Margin = new System.Windows.Forms.Padding(4);
             this.btn_5.Name = "btn_5";
             this.btn_5.Size = new System.Drawing.Size(86, 72);
             this.btn_5.TabIndex = 4;
@@ -241,7 +241,7 @@
             this.btn_4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_4.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_4.Location = new System.Drawing.Point(4, 84);
-            this.btn_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_4.Margin = new System.Windows.Forms.Padding(4);
             this.btn_4.Name = "btn_4";
             this.btn_4.Size = new System.Drawing.Size(86, 72);
             this.btn_4.TabIndex = 3;
@@ -253,7 +253,7 @@
             this.btn_3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_3.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_3.Location = new System.Drawing.Point(192, 4);
-            this.btn_3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_3.Margin = new System.Windows.Forms.Padding(4);
             this.btn_3.Name = "btn_3";
             this.btn_3.Size = new System.Drawing.Size(88, 72);
             this.btn_3.TabIndex = 2;
@@ -265,7 +265,7 @@
             this.btn_2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_2.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_2.Location = new System.Drawing.Point(98, 4);
-            this.btn_2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_2.Margin = new System.Windows.Forms.Padding(4);
             this.btn_2.Name = "btn_2";
             this.btn_2.Size = new System.Drawing.Size(86, 72);
             this.btn_2.TabIndex = 1;
@@ -277,7 +277,7 @@
             this.btn_1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_1.Font = new System.Drawing.Font("Dubai", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_1.Location = new System.Drawing.Point(4, 4);
-            this.btn_1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_1.Margin = new System.Windows.Forms.Padding(4);
             this.btn_1.Name = "btn_1";
             this.btn_1.Size = new System.Drawing.Size(86, 72);
             this.btn_1.TabIndex = 0;
@@ -286,23 +286,13 @@
             // 
             // pnl_coord
             // 
-            this.pnl_coord.Controls.Add(this.txt_box_coord);
+            this.pnl_coord.Controls.Add(this.lbl_coord);
             this.pnl_coord.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_coord.Location = new System.Drawing.Point(148, 43);
             this.pnl_coord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnl_coord.Name = "pnl_coord";
             this.pnl_coord.Size = new System.Drawing.Size(284, 126);
             this.pnl_coord.TabIndex = 4;
-            // 
-            // txt_box_coord
-            // 
-            this.txt_box_coord.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_box_coord.Location = new System.Drawing.Point(43, 26);
-            this.txt_box_coord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_box_coord.Name = "txt_box_coord";
-            this.txt_box_coord.Size = new System.Drawing.Size(204, 75);
-            this.txt_box_coord.TabIndex = 0;
-            this.txt_box_coord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pnl_down
             // 
@@ -340,6 +330,16 @@
             this.pnl_left.Size = new System.Drawing.Size(148, 620);
             this.pnl_left.TabIndex = 0;
             // 
+            // lbl_coord
+            // 
+            this.lbl_coord.AutoSize = true;
+            this.lbl_coord.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_coord.Location = new System.Drawing.Point(71, 17);
+            this.lbl_coord.Name = "lbl_coord";
+            this.lbl_coord.Size = new System.Drawing.Size(136, 91);
+            this.lbl_coord.TabIndex = 0;
+            this.lbl_coord.Text = "A4";
+            // 
             // Frm_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -371,7 +371,7 @@
         private System.Windows.Forms.Panel pnl_left;
         private System.Windows.Forms.Panel pnl_keypad;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button btn_plus;
+        private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.Button btn_10;
         private System.Windows.Forms.Button btn_c;
         private System.Windows.Forms.Button btn_9;
@@ -385,6 +385,6 @@
         private System.Windows.Forms.Button btn_1;
         private System.Windows.Forms.Panel pnl_code;
         private System.Windows.Forms.TextBox txt_box_code;
-        private System.Windows.Forms.TextBox txt_box_coord;
+        private System.Windows.Forms.Label lbl_coord;
     }
 }

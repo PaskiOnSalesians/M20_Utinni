@@ -23,21 +23,42 @@ namespace MESSI_M20
             int random_num;
             int pos;
 
-            while (Code_Nums.ToString() != "")
+            while (Code_Nums.Count > 0)
             {
                 random_num = rand.Next(0,10);
-                Console.Write(random_num);
                 if (Code_Nums.Contains(random_num))
                 {
-                    pos = Code_Nums.IndexOf(random_num);
-                    Encoded_Keypad.Enqueue(Code_Nums[random_num]);
-                    Code_Nums.Remove(pos);
+                    pos = Code_Nums.LastIndexOf(random_num);
+                    Encoded_Keypad.Enqueue(Code_Nums[pos]);
+                    Code_Nums.RemoveAt(pos);
                 }
             }
 
+            ImprimirCoord();
             ImprimirKeypad(SaveArray(Encoded_Keypad));
         }
 
+        private void ImprimirCoord()
+        {
+            ArrayList coords = new ArrayList();
+            Random coord_random = new Random();
+            int pos_coord_r;
+            string coord;
+
+            for (char c = 'A'; c < 'E'; c++)
+            {
+                for(int j = 1; j < 6; j++)
+                {
+                    coord = c + j.ToString();
+                    coords.Add(coord);
+                }
+            }
+
+            pos_coord_r = coord_random.Next(0, coords.Count+1);
+            lbl_coord.Text = coords[pos_coord_r].ToString();
+        }
+
+        #region Keypad
         // Guardem la cua a un arraylist
 
         private ArrayList SaveArray(Queue Keypad)
@@ -110,7 +131,7 @@ namespace MESSI_M20
             txt_box_code.Text = "";
         }
 
-        private void btn_plus_Click(object sender, EventArgs e)
+        private void btn_login_Click(object sender, EventArgs e)
         {
             if(txt_box_code.Text.ToString() == "1234")
             {
@@ -215,5 +236,7 @@ namespace MESSI_M20
                 return true;
             }
         }
+
+        #endregion
     }
 }
