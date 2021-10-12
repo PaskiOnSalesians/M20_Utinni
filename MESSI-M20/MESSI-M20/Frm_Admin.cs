@@ -38,6 +38,9 @@ namespace MESSI_M20
             ImprimirKeypad(SaveArray(Encoded_Keypad));
         }
 
+
+        // Funcions relacionades amb les Coordenades
+        #region Imprimir Coords
         private void ImprimirCoord()
         {
             ArrayList coords = new ArrayList();
@@ -58,9 +61,26 @@ namespace MESSI_M20
             lbl_coord.Text = coords[pos_coord_r].ToString();
         }
 
+        #endregion
+
+        // Tancament de l'aplicacio
+        #region Tancar_App
+
+        // Tancar l'app si tanquem al finestra
+
+        private void Frm_Admin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        #endregion
+
+        // Funcions relacionades amb el Keypad
         #region Keypad
+
         // Guardem la cua a un arraylist
 
+        #region Assignar l'ordre de la cua a un arraylist
         private ArrayList SaveArray(Queue Keypad)
         {
             ArrayList Encoded_Keys = new ArrayList();
@@ -73,8 +93,11 @@ namespace MESSI_M20
             return Encoded_Keys;
         }
 
+        #endregion
+
         // Li posem nom a les tecles
 
+        #region Imprimir Keypad
         private void ImprimirKeypad(ArrayList Encoded_Keypad)
         {
             int pos = 0;
@@ -117,14 +140,11 @@ namespace MESSI_M20
             }
         }
 
-        // Tancar l'app si tanquem al finestra
-
-        private void Frm_Admin_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
+        #endregion
 
         // Botons de borrar y login
+
+        #region Botons de borrar codi y login
 
         private void btn_c_Click(object sender, EventArgs e)
         {
@@ -141,7 +161,11 @@ namespace MESSI_M20
             }
         }
 
+        #endregion
+
         // Botons Keypad
+
+        #region Assignar nums dels botons
 
         private void btn_1_Click(object sender, EventArgs e)
         {
@@ -223,8 +247,11 @@ namespace MESSI_M20
             }
         }
 
+        #endregion
+
         // Verificar si TextBox on surt la contraseña esta ple
 
+        #region Verificacio i limit del codi d'acces
         private Boolean FullTextBox()
         {
             if(txt_box_code.TextLength < 4)
@@ -236,6 +263,8 @@ namespace MESSI_M20
                 return true;
             }
         }
+
+        #endregion
 
         #endregion
     }
