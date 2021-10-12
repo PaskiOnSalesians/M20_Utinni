@@ -16,5 +16,22 @@ namespace MESSI_M20
         {
             InitializeComponent();
         }
+
+        private void btn_admin_coord_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Frm_Admin_Coords frm = new Frm_Admin_Coords();
+            frm.ShowDialog();
+        }
+
+        private void btn_admin_users_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btn_admin_devices_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -50,3 +50,4 @@ C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M
 C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_AdminPanel.resources
 C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Login.resources
 C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Splash.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin_Coords.resources
