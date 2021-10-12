@@ -57,7 +57,7 @@ namespace MESSI_M20
                 }
             }
 
-            pos_coord_r = coord_random.Next(0, coords.Count+1);
+            pos_coord_r = coord_random.Next(0, coords.Count);
             lbl_coord.Text = coords[pos_coord_r].ToString();
         }
 

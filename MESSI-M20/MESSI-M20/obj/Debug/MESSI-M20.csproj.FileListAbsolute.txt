@@ -28,8 +28,6 @@ C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\bin\D
 C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csprojAssemblyReference.cache
 C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin.resources
 C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.frm_Users.resources
-C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.formLogin.resources
-C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.formSplash.resources
 C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Properties.Resources.resources
 C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.GenerateResource.cache
 C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache
@@ -49,3 +47,6 @@ C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M
 C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_AdminPanel.resources
 C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Login.resources
 C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Splash.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_AdminPanel.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Login.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Splash.resources
