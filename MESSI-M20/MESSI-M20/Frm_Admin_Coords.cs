@@ -12,7 +12,8 @@ namespace MESSI_M20
 {
     public partial class Frm_Admin_Coords : Form
     {
-        IDictionary<string, int> codes_coords = new Dictionary<string, int>();
+        private Boolean verify_generate_button = false;
+        Dictionary<string, int> codes_coords = new Dictionary<string, int>();
         public Frm_Admin_Coords()
         {
             InitializeComponent();
@@ -27,5 +28,27 @@ namespace MESSI_M20
             frm.ShowDialog();
         }
         #endregion
+
+        private void btn_generate_Click(object sender, EventArgs e)
+        {
+            verify_generate_button = true;
+            codes_list;
+
+            for(int i = 'A'; i < 'E'; i++)
+            {
+                for(int j = 1; j < 6; j++)
+                {
+                    codes_coords.Add((i+j).ToString(), codes_list[]);
+                }
+            }
+        }
+
+        private void btn_show_Click(object sender, EventArgs e)
+        {
+            if (verify_generate_button == false)
+            {
+                MessageBox.Show("Error, no s'han generat les coordenades.", "SITH CONTROLLER ERROR 02");
+            }
+        }
     }
 }
