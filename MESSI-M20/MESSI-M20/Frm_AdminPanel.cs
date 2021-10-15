@@ -33,7 +33,9 @@ namespace MESSI_M20
 
         private void btn_admin_devices_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Frm_GestioDispositius frm = new Frm_GestioDispositius();
+            frm.ShowDialog();
         }
     }
 }

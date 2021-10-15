@@ -64,6 +64,12 @@
     <Compile Include="Frm_Admin_Coords.Designer.cs">
       <DependentUpon>Frm_Admin_Coords.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_GestioDispositius.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_GestioDispositius.Designer.cs">
+      <DependentUpon>Frm_GestioDispositius.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_GestioUsuaris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Admin_Coords.resx">
       <DependentUpon>Frm_Admin_Coords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_GestioDispositius.resx">
+      <DependentUpon>Frm_GestioDispositius.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_GestioUsuaris.resx">
       <DependentUpon>Frm_GestioUsuaris.cs</DependentUpon>
