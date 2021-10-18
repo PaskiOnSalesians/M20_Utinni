@@ -32,29 +32,27 @@ namespace MESSI_M20
 
         // Boto per a generar una taula
         #region Generar taula
-
         private void btn_generate_Click(object sender, EventArgs e)
         {
             int limit = 20, count;
             // string dictionary; // Variable per a debug
             Font fnt = new Font("Dubai", 12);
 
-
             verify_generate_button = true;
-            
-            HashSet<string>codes_list = new HashSet<string>();
+
+            HashSet<string> codes_list = new HashSet<string>();
             string[] codes = new string[limit];
-            
-            codes_list = Generate_Codes(codes_list);
+
+            codes_list = Generate_Codes(codes_list, ref limit, codes);
 
             codes = codes_list.ToArray();
 
             count = 0;
-            for(char i = 'A'; i < 'E'; i++)
+            for (char i = 'A'; i < 'E'; i++)
             {
-                for(int j = 1; j < 6; j++)
+                for (int j = 1; j < 6; j++)
                 {
-                    if(count < limit)
+                    if (count < limit)
                     {
                         codes_coords.Add((i.ToString() + j.ToString()), codes[count]);
                         Label lbl = new Label();
@@ -71,35 +69,16 @@ namespace MESSI_M20
             }
 
             layoutpnl_coord.Visible = true;
-
-            foreach (KeyValuePair<string, string> keyValues in codes_coords)
-            {
-               
-            }
         }
 
-        // Eina per a comprovar el diccionari
-        #region Comprovacio de Diccionari [DEBUG]
-        /*
-        public string DictionaryToString(Dictionary<string, string> dictionary)
+        private HashSet<string> Generate_Codes(HashSet<string> codes_hash, ref int limit, string[] codes)
         {
-            string dictionaryString = "{";
-            foreach (KeyValuePair<string, string> keyValues in dictionary)
-            {
-                dictionaryString += keyValues.Key + " : " + keyValues.Value + ", ";
-            }
-            return dictionaryString.TrimEnd(',', ' ') + "}";
-        }*/
-        #endregion
-
-        private HashSet<string> Generate_Codes(HashSet<string> codes)
-        {
-            int limit = 20; // limit de codis a generar
+            int limit_codis = 20; // limit de codis a generar
             Random rand = new Random();
             int num_random;
             string strng_n_random;
 
-            while(limit > 0)
+            while (limit_codis > 0)
             {
                 num_random = rand.Next(0, 10000);
                 strng_n_random = num_random.ToString();
@@ -109,11 +88,11 @@ namespace MESSI_M20
                     {
                         strng_n_random = "0" + strng_n_random;
                     }
-                    codes.Add(strng_n_random);
-                    limit--;
+                    codes_hash.Add(strng_n_random);
+                    limit_codis--;
                 }
             }
-            return codes;
+            return codes_hash;
         }
 
         #endregion
@@ -126,7 +105,12 @@ namespace MESSI_M20
             {
                 MessageBox.Show("Error, no s'han generat les coordenades.", "SITH CONTROLLER: ERROR 02");
             }
+            else
+            {
+                
+            }
         }
+
         #endregion
     }
 }
