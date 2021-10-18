@@ -37,7 +37,6 @@ C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M
 C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.exe
 C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.pdb
 C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin.resources
-C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.frm_Users.resources
 C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Properties.Resources.resources
 C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.GenerateResource.cache
 C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache

@@ -17,21 +17,30 @@ namespace MESSI_M20
             InitializeComponent();
         }
 
+        // Accedir al panell de coordenades
+        #region Acces al panell de coordenades
         private void btn_admin_coord_Click(object sender, EventArgs e)
         {
             this.Hide();
             Frm_Admin_Coords frm = new Frm_Admin_Coords();
             frm.ShowDialog();
         }
+        #endregion
 
+        // Accedir al panell de gestio d'usuaris
+        #region Acces al panell de gestio d'usuaris
         private void btn_admin_users_Click(object sender, EventArgs e)
         {
             
         }
+        #endregion
 
+        // Accedir al panell de gestio de dispositius
+        #region Acces al panell de gestio de dispositius
         private void btn_admin_devices_Click(object sender, EventArgs e)
         {
             
         }
+        #endregion
     }
 }

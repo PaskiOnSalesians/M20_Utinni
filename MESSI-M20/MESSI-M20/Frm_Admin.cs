@@ -17,6 +17,8 @@ namespace MESSI_M20
         {
             InitializeComponent();
 
+            // Iniciem el Keypad
+            #region Iniciar el Keypad
             ArrayList Code_Nums = new ArrayList() {0,1,2,3,4,5,6,7,8,9};
             Queue Encoded_Keypad = new Queue();
             Random rand = new Random();
@@ -36,6 +38,7 @@ namespace MESSI_M20
 
             ImprimirCoord();
             ImprimirKeypad(SaveArray(Encoded_Keypad));
+            #endregion
         }
 
 

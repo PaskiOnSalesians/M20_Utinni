@@ -19,6 +19,8 @@ namespace MESSI_M20
 
         private Boolean verifyAdmin = false;
 
+        // Timer d'acces al login
+        #region Timer
         private void timerSplash_Tick(object sender, EventArgs e)
         {
             pgbSplash.Increment(4);
@@ -33,7 +35,10 @@ namespace MESSI_M20
                 formLogin.ShowDialog();
             }
         }
+        #endregion
 
+        // Tecles rapides d'acces al panell d'administracio
+        #region Events de Tecles Rapides
         private void formSplash_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.Alt && e.KeyCode == Keys.F2)
@@ -44,5 +49,6 @@ namespace MESSI_M20
                 frm.ShowDialog();
             }
         }
+        #endregion
     }
 }
