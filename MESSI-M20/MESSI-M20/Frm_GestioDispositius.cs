@@ -16,16 +16,25 @@ namespace MESSI_M20
         public Frm_GestioDispositius()
         {
             InitializeComponent();
+            string mac_address;
 
-            var macAddr =
-            (
-                from nic in NetworkInterface.GetAllNetworkInterfaces()
-                where nic.OperationalStatus == OperationalStatus.Up
-                select nic.GetPhysicalAddress().ToString()
-            ).FirstOrDefault();
+            mac_address = GetMacAddress().ToString();
 
-            txtMAC.Text = macAddr;
+            txtMAC.Text = mac_address;
             txtHostName.Text = Environment.MachineName; //nom maquina
+        }
+
+        private static PhysicalAddress GetMacAddress()
+        {
+            foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
+            {
+                if(nic.OperationalStatus == OperationalStatus.Up && (nic.Description != "VirtualBox Host-Only Ethernet Adapter"))
+                {
+                    return nic.GetPhysicalAddress();
+                }
+            }
+
+            return null;
         }
 
         private void btn_return_apanel_Click(object sender, EventArgs e)
