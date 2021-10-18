@@ -31,9 +31,9 @@ namespace MESSI_M20
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_GestioUsuaris));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cmbUsers = new System.Windows.Forms.ComboBox();
+            this.txtHostName = new System.Windows.Forms.TextBox();
+            this.txtMAC = new System.Windows.Forms.TextBox();
             this.labelUser = new System.Windows.Forms.Label();
             this.labelHostName = new System.Windows.Forms.Label();
             this.labelMac = new System.Windows.Forms.Label();
@@ -47,9 +47,9 @@ namespace MESSI_M20
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.cmbUsers);
+            this.panel1.Controls.Add(this.txtHostName);
+            this.panel1.Controls.Add(this.txtMAC);
             this.panel1.Controls.Add(this.labelUser);
             this.panel1.Controls.Add(this.labelHostName);
             this.panel1.Controls.Add(this.labelMac);
@@ -59,30 +59,35 @@ namespace MESSI_M20
             this.panel1.Size = new System.Drawing.Size(721, 131);
             this.panel1.TabIndex = 0;
             // 
-            // comboBox1
+            // cmbUsers
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(487, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 36);
-            this.comboBox1.TabIndex = 1;
+            this.cmbUsers.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbUsers.FormattingEnabled = true;
+            this.cmbUsers.Items.AddRange(new object[] {
+            "Paski",
+            "Carlos",
+            "Oriol"});
+            this.cmbUsers.Location = new System.Drawing.Point(487, 19);
+            this.cmbUsers.Name = "cmbUsers";
+            this.cmbUsers.Size = new System.Drawing.Size(183, 36);
+            this.cmbUsers.TabIndex = 1;
+            this.cmbUsers.TextChanged += new System.EventHandler(this.cmbUsers_TextChanged);
             // 
-            // textBox2
+            // txtHostName
             // 
-            this.textBox2.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(149, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(203, 36);
-            this.textBox2.TabIndex = 4;
+            this.txtHostName.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHostName.Location = new System.Drawing.Point(149, 78);
+            this.txtHostName.Name = "txtHostName";
+            this.txtHostName.Size = new System.Drawing.Size(203, 36);
+            this.txtHostName.TabIndex = 4;
             // 
-            // textBox1
+            // txtMAC
             // 
-            this.textBox1.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(149, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 36);
-            this.textBox1.TabIndex = 3;
+            this.txtMAC.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMAC.Location = new System.Drawing.Point(149, 19);
+            this.txtMAC.Name = "txtMAC";
+            this.txtMAC.Size = new System.Drawing.Size(203, 36);
+            this.txtMAC.TabIndex = 3;
             // 
             // labelUser
             // 
@@ -144,6 +149,7 @@ namespace MESSI_M20
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnDelete
             // 
@@ -201,14 +207,14 @@ namespace MESSI_M20
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtHostName;
+        private System.Windows.Forms.TextBox txtMAC;
         private System.Windows.Forms.Label labelHostName;
         private System.Windows.Forms.Label labelMac;
         private System.Windows.Forms.Button btnCheck;
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbUsers;
         private System.Windows.Forms.Label labelUser;
         private System.Windows.Forms.Button btn_return_apanel;
     }

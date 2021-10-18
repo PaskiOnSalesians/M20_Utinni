@@ -23,5 +23,24 @@ namespace MESSI_M20
             Frm_AdminPanel frm = new Frm_AdminPanel();
             frm.ShowDialog();
         }
+
+        private void cmbUsers_TextChanged(object sender, EventArgs e)
+        {
+            if (cmbUsers.Text.Equals("Oriol"))
+            {
+                txtMAC.Text = "A1-21-VC-12-41-C2";
+                txtHostName.Text = "LAPTOP-Oriol";
+            }
+            else
+            {
+                txtMAC.Text = string.Empty;
+                txtHostName.Text = string.Empty;
+            }
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -16,6 +16,7 @@ namespace MESSI_M20
         public Frm_GestioDispositius()
         {
             InitializeComponent();
+
             var macAddr =
             (
                 from nic in NetworkInterface.GetAllNetworkInterfaces()
@@ -24,6 +25,7 @@ namespace MESSI_M20
             ).FirstOrDefault();
 
             txtMAC.Text = macAddr;
+            txtHostName.Text = Environment.MachineName; //nom maquina
         }
 
         private void btn_return_apanel_Click(object sender, EventArgs e)
