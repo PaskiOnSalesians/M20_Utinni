@@ -86,7 +86,7 @@ namespace MESSI_M20
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Location = new System.Drawing.Point(77, 241);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(107, 40);
+            this.btnSave.Size = new System.Drawing.Size(105, 42);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -100,7 +100,7 @@ namespace MESSI_M20
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(204, 241);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(107, 40);
+            this.btnDelete.Size = new System.Drawing.Size(105, 42);
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -130,7 +130,7 @@ namespace MESSI_M20
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1071, 498);
+            this.ClientSize = new System.Drawing.Size(770, 464);
             this.Controls.Add(this.btn_return_apanel);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnSave);

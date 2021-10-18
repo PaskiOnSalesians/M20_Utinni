@@ -53,10 +53,10 @@ namespace MESSI_M20
             this.panel1.Controls.Add(this.labelUser);
             this.panel1.Controls.Add(this.labelHostName);
             this.panel1.Controls.Add(this.labelMac);
-            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(59, 98);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(721, 153);
+            this.panel1.Size = new System.Drawing.Size(721, 131);
             this.panel1.TabIndex = 0;
             // 
             // comboBox1
@@ -100,7 +100,7 @@ namespace MESSI_M20
             this.labelHostName.AutoSize = true;
             this.labelHostName.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHostName.ForeColor = System.Drawing.Color.White;
-            this.labelHostName.Location = new System.Drawing.Point(48, 78);
+            this.labelHostName.Location = new System.Drawing.Point(48, 81);
             this.labelHostName.Name = "labelHostName";
             this.labelHostName.Size = new System.Drawing.Size(87, 28);
             this.labelHostName.TabIndex = 1;
@@ -122,9 +122,9 @@ namespace MESSI_M20
             this.btnCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnCheck.FlatAppearance.BorderSize = 0;
             this.btnCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheck.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheck.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheck.ForeColor = System.Drawing.Color.White;
-            this.btnCheck.Location = new System.Drawing.Point(59, 269);
+            this.btnCheck.Location = new System.Drawing.Point(59, 254);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(105, 42);
             this.btnCheck.TabIndex = 1;
@@ -136,9 +136,9 @@ namespace MESSI_M20
             this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnRegister.FlatAppearance.BorderSize = 0;
             this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.ForeColor = System.Drawing.Color.White;
-            this.btnRegister.Location = new System.Drawing.Point(184, 269);
+            this.btnRegister.Location = new System.Drawing.Point(184, 254);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(105, 42);
             this.btnRegister.TabIndex = 2;
@@ -150,9 +150,9 @@ namespace MESSI_M20
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(315, 269);
+            this.btnDelete.Location = new System.Drawing.Point(315, 254);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(105, 42);
             this.btnDelete.TabIndex = 3;
@@ -184,7 +184,7 @@ namespace MESSI_M20
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1096, 490);
+            this.ClientSize = new System.Drawing.Size(901, 473);
             this.Controls.Add(this.btn_return_apanel);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnRegister);
