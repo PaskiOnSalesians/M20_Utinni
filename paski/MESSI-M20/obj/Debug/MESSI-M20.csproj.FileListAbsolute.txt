@@ -1,0 +1,69 @@
+C:\Users\oriol\Documents\GitHub\utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.exe.config
+C:\Users\oriol\Documents\GitHub\utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.exe
+C:\Users\oriol\Documents\GitHub\utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.pdb
+C:\Users\oriol\Documents\GitHub\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.AssemblyReference.cache
+C:\Users\oriol\Documents\GitHub\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.formSplash.resources
+C:\Users\oriol\Documents\GitHub\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Properties.Resources.resources
+C:\Users\oriol\Documents\GitHub\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.GenerateResource.cache
+C:\Users\oriol\Documents\GitHub\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache
+C:\Users\oriol\Documents\GitHub\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.exe
+C:\Users\oriol\Documents\GitHub\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.pdb
+C:\Users\oriol\Documents\GitHub\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.formLogin.resources
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.exe.config
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.exe
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.pdb
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csprojAssemblyReference.cache
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.formLogin.resources
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.formSplash.resources
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Properties.Resources.resources
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.GenerateResource.cache
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.exe
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.pdb
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.frm_Users.resources
+C:\Users\Paski\Documents\GitHub\cms-perseo\utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.exe.config
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.exe
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.pdb
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csprojAssemblyReference.cache
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Properties.Resources.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.GenerateResource.cache
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.exe
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.pdb
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.exe.config
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.exe
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\bin\Debug\MESSI-M20.pdb
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin.resources
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Properties.Resources.resources
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.GenerateResource.cache
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.exe
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.pdb
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_AdminPanel.resources
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Login.resources
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Splash.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_AdminPanel.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Login.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Splash.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin_Coords.resources
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI-M20.csproj.AssemblyReference.cache
+C:\Users\Paski\Documents\GitHub\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin_Coords.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_GestioDispositius.resources
+C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\MESSI-M20\MESSI-M20\obj\Debug\MESSI_M20.Frm_GestioUsuaris.resources
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin.resources
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_AdminPanel.resources
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin_Coords.resources
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_GestioDispositius.resources
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_GestioUsuaris.resources
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\Users.frm_principal.resources
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_Splash.resources
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\Users.frm_users.resources
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.GenerateResource.cache
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\MESSI-M20.exe
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\MESSI-M20.pdb
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\bin\Debug\MESSI-M20.exe.config
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\bin\Debug\MESSI-M20.exe
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\bin\Debug\MESSI-M20.pdb
+C:\Users\Paski\Desktop\utinni\MESSI-M20\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache
