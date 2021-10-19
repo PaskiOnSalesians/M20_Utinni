@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.NetworkInformation;
 using System.Windows.Forms;
 
 namespace MESSI_M20
@@ -15,6 +16,26 @@ namespace MESSI_M20
         public Frm_GestioUsuaris()
         {
             InitializeComponent();
+
+            string mac_address;
+
+            mac_address = GetMacAddress().ToString();
+
+            txtMAC.Text = mac_address;
+            txtHostName.Text = Environment.MachineName;
+        }
+
+        private static PhysicalAddress GetMacAddress()
+        {
+            foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
+            {
+                if (nic.OperationalStatus == OperationalStatus.Up && (nic.Description != "VirtualBox Host-Only Ethernet Adapter"))
+                {
+                    return nic.GetPhysicalAddress();
+                }
+            }
+
+            return null;
         }
 
         private void btn_return_apanel_Click(object sender, EventArgs e)
@@ -24,23 +45,5 @@ namespace MESSI_M20
             frm.ShowDialog();
         }
 
-        private void cmbUsers_TextChanged(object sender, EventArgs e)
-        {
-            if (cmbUsers.Text.Equals("Oriol"))
-            {
-                txtMAC.Text = "A1-21-VC-12-41-C2";
-                txtHostName.Text = "LAPTOP-Oriol";
-            }
-            else
-            {
-                txtMAC.Text = string.Empty;
-                txtHostName.Text = string.Empty;
-            }
-        }
-
-        private void btnRegister_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

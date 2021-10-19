@@ -71,7 +71,6 @@ namespace MESSI_M20
             this.cmbUsers.Name = "cmbUsers";
             this.cmbUsers.Size = new System.Drawing.Size(183, 36);
             this.cmbUsers.TabIndex = 1;
-            this.cmbUsers.TextChanged += new System.EventHandler(this.cmbUsers_TextChanged);
             // 
             // txtHostName
             // 
@@ -149,7 +148,6 @@ namespace MESSI_M20
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // btnDelete
             // 
