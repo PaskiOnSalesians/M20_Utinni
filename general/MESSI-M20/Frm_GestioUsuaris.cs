@@ -30,8 +30,8 @@ namespace MESSI_M20
         {
             foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
             {
-                if (nic.OperationalStatus == OperationalStatus.Up && (nic.Description != "VirtualBox Host-Only Ethernet Adapter"))
-                {
+                if (nic.OperationalStatus == OperationalStatus.Up && (nic.NetworkInterfaceType == NetworkInterfaceType.Wireless80211))
+                    {
                     return nic.GetPhysicalAddress();
                 }
             }
@@ -49,9 +49,9 @@ namespace MESSI_M20
         private void btnRegister_Click(object sender, EventArgs e)
         {
             //ReadAllSettings();
-            ReadSetting("TrustedUser");
             AddUpdateAppSettings("TrustedUser", cmbUsers.Text);
-            //ReadAllSettings();
+            //ReadSetting("TrustedUser");
+            ReadAllSettings();
         }
 
         static void ReadAllSettings()
