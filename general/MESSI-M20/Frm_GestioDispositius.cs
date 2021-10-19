@@ -28,12 +28,11 @@ namespace MESSI_M20
         {
             foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
             {
-                if(nic.OperationalStatus == OperationalStatus.Up && (nic.Description != "VirtualBox Host-Only Ethernet Adapter"))
+                if (nic.OperationalStatus == OperationalStatus.Up && (nic.NetworkInterfaceType == NetworkInterfaceType.Wireless80211))
                 {
                     return nic.GetPhysicalAddress();
                 }
             }
-
             return null;
         }
 
