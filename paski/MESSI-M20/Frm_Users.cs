@@ -19,6 +19,9 @@ namespace Users
             InitializeComponent();
         }
 
+        DataSet patata = new DataSet();
+        
+
         #region Login+Intents
         private void button1_Click(object sender, EventArgs e)
         {
