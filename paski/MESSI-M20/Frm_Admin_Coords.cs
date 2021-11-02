@@ -61,8 +61,6 @@ namespace MESSI_M20
             }
         }
 
-
-
         private HashSet<string> Generate_Codes(HashSet<string> codes_hash, ref int limit, string[] codes)
         {
             int limit_codis = 20; // limit de codis a generar
@@ -99,6 +97,7 @@ namespace MESSI_M20
             }
             else
             {
+                
                 foreach (KeyValuePair<string, string> keyValue in codes_coords)
                 {
                     Label lbl = new Label();

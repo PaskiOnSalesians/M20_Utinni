@@ -25,17 +25,6 @@ namespace Users
         #region Login+Intents
         private void button1_Click(object sender, EventArgs e)
         {
-
-            /*
-            sdsBBDD.Selects bd = new sdsBBDD.Selects();
-            string query = "Select * from Patatas";
-
-            DataSet dts = bd.PortarPerConsulta(query);
-
-            int quants = dts.Tables[0].Rows.Count;
-            MessageBox.Show(quants.ToString());
-            */
-
             frm_principal principal = new frm_principal();
             
             if (txt_box_user.Text == "hola" && textBox2.Text == "hola")
