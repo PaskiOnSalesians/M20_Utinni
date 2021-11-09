@@ -48,18 +48,18 @@ namespace MESSI_M20
             // pgbSplash
             // 
             this.pgbSplash.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pgbSplash.Location = new System.Drawing.Point(49, 325);
+            this.pgbSplash.Location = new System.Drawing.Point(115, 325);
             this.pgbSplash.Name = "pgbSplash";
-            this.pgbSplash.Size = new System.Drawing.Size(619, 24);
+            this.pgbSplash.Size = new System.Drawing.Size(673, 24);
             this.pgbSplash.TabIndex = 0;
             // 
             // labelSplash
             // 
             this.labelSplash.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.labelSplash.BackColor = System.Drawing.Color.Transparent;
-            this.labelSplash.Font = new System.Drawing.Font("Dubai", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSplash.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSplash.ForeColor = System.Drawing.Color.Transparent;
-            this.labelSplash.Location = new System.Drawing.Point(674, 319);
+            this.labelSplash.Location = new System.Drawing.Point(794, 322);
             this.labelSplash.Name = "labelSplash";
             this.labelSplash.Size = new System.Drawing.Size(85, 45);
             this.labelSplash.TabIndex = 1;
@@ -70,11 +70,11 @@ namespace MESSI_M20
             this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblTitle.AutoSize = true;
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Dubai", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(244, 59);
+            this.lblTitle.Location = new System.Drawing.Point(257, 57);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(382, 165);
+            this.lblTitle.Size = new System.Drawing.Size(425, 114);
             this.lblTitle.TabIndex = 2;
             this.lblTitle.Text = "MILITARY ENGINEERING\r\nSECURITY SYSTEM &\r\nINNOVATION";
             // 
@@ -82,7 +82,7 @@ namespace MESSI_M20
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::MESSI_M20.Properties.Resources.jawahead2;
-            this.pictureBox2.Location = new System.Drawing.Point(632, 72);
+            this.pictureBox2.Location = new System.Drawing.Point(776, 67);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(144, 139);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -93,7 +93,7 @@ namespace MESSI_M20
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::MESSI_M20.Properties.Resources._170px_Sith_Emblem__Star_Wars__svg;
-            this.pictureBox1.Location = new System.Drawing.Point(25, 36);
+            this.pictureBox1.Location = new System.Drawing.Point(38, 36);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(213, 212);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -105,7 +105,7 @@ namespace MESSI_M20
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(932, 450);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTitle);
@@ -115,7 +115,6 @@ namespace MESSI_M20
             this.Name = "Frm_Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSplash";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.formSplash_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
