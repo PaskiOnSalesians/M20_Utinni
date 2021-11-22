@@ -118,9 +118,9 @@ namespace MESSI_M20
             this.panel_f_C.Controls.Add(this.lbl_panel_f_C);
             this.panel_f_C.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_f_C.Location = new System.Drawing.Point(5, 221);
-            this.panel_f_C.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_f_C.Margin = new System.Windows.Forms.Padding(2);
             this.panel_f_C.Name = "panel_f_C";
-            this.panel_f_C.Size = new System.Drawing.Size(168, 65);
+            this.panel_f_C.Size = new System.Drawing.Size(169, 65);
             this.panel_f_C.TabIndex = 10;
             // 
             // lbl_panel_f_C
@@ -139,9 +139,9 @@ namespace MESSI_M20
             this.panel_f_D.Controls.Add(this.lbl_panel_f_D);
             this.panel_f_D.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_f_D.Location = new System.Drawing.Point(5, 293);
-            this.panel_f_D.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_f_D.Margin = new System.Windows.Forms.Padding(2);
             this.panel_f_D.Name = "panel_f_D";
-            this.panel_f_D.Size = new System.Drawing.Size(168, 66);
+            this.panel_f_D.Size = new System.Drawing.Size(169, 66);
             this.panel_f_D.TabIndex = 9;
             // 
             // lbl_panel_f_D
@@ -160,9 +160,9 @@ namespace MESSI_M20
             this.panel_f_A.Controls.Add(this.lbl_panel_f_A);
             this.panel_f_A.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_f_A.Location = new System.Drawing.Point(5, 77);
-            this.panel_f_A.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_f_A.Margin = new System.Windows.Forms.Padding(2);
             this.panel_f_A.Name = "panel_f_A";
-            this.panel_f_A.Size = new System.Drawing.Size(168, 65);
+            this.panel_f_A.Size = new System.Drawing.Size(169, 65);
             this.panel_f_A.TabIndex = 6;
             // 
             // lbl_panel_f_A
@@ -180,10 +180,10 @@ namespace MESSI_M20
             // 
             this.panel_c_5.Controls.Add(this.lbl_panel_c_5);
             this.panel_c_5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_c_5.Location = new System.Drawing.Point(880, 5);
-            this.panel_c_5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_c_5.Location = new System.Drawing.Point(885, 5);
+            this.panel_c_5.Margin = new System.Windows.Forms.Padding(2);
             this.panel_c_5.Name = "panel_c_5";
-            this.panel_c_5.Size = new System.Drawing.Size(174, 65);
+            this.panel_c_5.Size = new System.Drawing.Size(169, 65);
             this.panel_c_5.TabIndex = 5;
             // 
             // lbl_panel_c_5
@@ -201,10 +201,10 @@ namespace MESSI_M20
             // 
             this.panel_c_4.Controls.Add(this.lbl_panel_c_4);
             this.panel_c_4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_c_4.Location = new System.Drawing.Point(705, 5);
-            this.panel_c_4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_c_4.Location = new System.Drawing.Point(709, 5);
+            this.panel_c_4.Margin = new System.Windows.Forms.Padding(2);
             this.panel_c_4.Name = "panel_c_4";
-            this.panel_c_4.Size = new System.Drawing.Size(168, 65);
+            this.panel_c_4.Size = new System.Drawing.Size(169, 65);
             this.panel_c_4.TabIndex = 4;
             // 
             // lbl_panel_c_4
@@ -222,10 +222,10 @@ namespace MESSI_M20
             // 
             this.panel_c_3.Controls.Add(this.lbal_panel_c_3);
             this.panel_c_3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_c_3.Location = new System.Drawing.Point(530, 5);
-            this.panel_c_3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_c_3.Location = new System.Drawing.Point(533, 5);
+            this.panel_c_3.Margin = new System.Windows.Forms.Padding(2);
             this.panel_c_3.Name = "panel_c_3";
-            this.panel_c_3.Size = new System.Drawing.Size(168, 65);
+            this.panel_c_3.Size = new System.Drawing.Size(169, 65);
             this.panel_c_3.TabIndex = 3;
             // 
             // lbal_panel_c_3
@@ -243,10 +243,10 @@ namespace MESSI_M20
             // 
             this.panel_c_2.Controls.Add(this.lbl_panel_c_2);
             this.panel_c_2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_c_2.Location = new System.Drawing.Point(355, 5);
-            this.panel_c_2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_c_2.Location = new System.Drawing.Point(357, 5);
+            this.panel_c_2.Margin = new System.Windows.Forms.Padding(2);
             this.panel_c_2.Name = "panel_c_2";
-            this.panel_c_2.Size = new System.Drawing.Size(168, 65);
+            this.panel_c_2.Size = new System.Drawing.Size(169, 65);
             this.panel_c_2.TabIndex = 2;
             // 
             // lbl_panel_c_2
@@ -264,10 +264,10 @@ namespace MESSI_M20
             // 
             this.panel2.Controls.Add(this.panel_c_1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(180, 5);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(181, 5);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(168, 65);
+            this.panel2.Size = new System.Drawing.Size(169, 65);
             this.panel2.TabIndex = 1;
             // 
             // panel_c_1
@@ -275,9 +275,9 @@ namespace MESSI_M20
             this.panel_c_1.Controls.Add(this.lbl_panel_c_1);
             this.panel_c_1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_c_1.Location = new System.Drawing.Point(0, 0);
-            this.panel_c_1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_c_1.Margin = new System.Windows.Forms.Padding(2);
             this.panel_c_1.Name = "panel_c_1";
-            this.panel_c_1.Size = new System.Drawing.Size(168, 65);
+            this.panel_c_1.Size = new System.Drawing.Size(169, 65);
             this.panel_c_1.TabIndex = 1;
             // 
             // lbl_panel_c_1
@@ -295,9 +295,9 @@ namespace MESSI_M20
             // 
             this.panel_empty_corner.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_empty_corner.Location = new System.Drawing.Point(5, 5);
-            this.panel_empty_corner.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_empty_corner.Margin = new System.Windows.Forms.Padding(2);
             this.panel_empty_corner.Name = "panel_empty_corner";
-            this.panel_empty_corner.Size = new System.Drawing.Size(168, 65);
+            this.panel_empty_corner.Size = new System.Drawing.Size(169, 65);
             this.panel_empty_corner.TabIndex = 0;
             // 
             // panel_f_B
@@ -306,9 +306,9 @@ namespace MESSI_M20
             this.panel_f_B.Controls.Add(this.panel10);
             this.panel_f_B.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_f_B.Location = new System.Drawing.Point(5, 149);
-            this.panel_f_B.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_f_B.Margin = new System.Windows.Forms.Padding(2);
             this.panel_f_B.Name = "panel_f_B";
-            this.panel_f_B.Size = new System.Drawing.Size(168, 65);
+            this.panel_f_B.Size = new System.Drawing.Size(169, 65);
             this.panel_f_B.TabIndex = 7;
             // 
             // lbl_panel_f_B
@@ -325,7 +325,7 @@ namespace MESSI_M20
             // panel10
             // 
             this.panel10.Location = new System.Drawing.Point(7, 90);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(152, 41);
             this.panel10.TabIndex = 8;

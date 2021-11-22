@@ -12,7 +12,7 @@ namespace MESSI_M20
 {
     public partial class Frm_Admin_Coords : Form
     {
-        private Boolean verify_generate_button = false;
+        private bool verify_generate_button = false, imprimir = true;
         Dictionary<string, string> codes_coords = new Dictionary<string, string>();
         Font fnt = new Font("Dubai", 12);
 
@@ -39,6 +39,7 @@ namespace MESSI_M20
             int limit = 20, count;
 
             verify_generate_button = true;
+            imprimir = true;
 
             HashSet<string> codes_list = new HashSet<string>();
             string[] codes = new string[limit];
@@ -50,14 +51,26 @@ namespace MESSI_M20
             count = 0;
             for (char i = 'A'; i < 'E'; i++)
             {
+                if (imprimir)
+                {
+                    Label lbl = new Label();
+                    lbl.Text = 
+                    table_layout_pnl_coord.RowStyles.Add(lbl);
+                }
                 for (int j = 1; j < 6; j++)
                 {
+                    if (imprimir)
+                    {
+
+                    }
                     if (count < limit)
                     {
                         codes_coords.Add((i.ToString() + j.ToString()), codes[count]);
                         count++;
                     }
                 }
+
+                imprimir = true;
             }
         }
 
@@ -91,13 +104,14 @@ namespace MESSI_M20
         #region Botó Show
         private void btn_show_Click(object sender, EventArgs e)
         {
+            table_layout_pnl_coord.Controls.Clear();
+
             if (verify_generate_button == false)
             {
                 MessageBox.Show("Error, no s'han generat les coordenades.", "SITH CONTROLLER: ERROR 02");
             }
             else
-            {
-                
+            {   
                 foreach (KeyValuePair<string, string> keyValue in codes_coords)
                 {
                     Label lbl = new Label();

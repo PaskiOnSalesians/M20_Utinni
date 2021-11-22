@@ -47,6 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DARKCOREDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DARKCOREDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +130,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="DARKCOREDataSet.xsc">
+      <DependentUpon>DARKCOREDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DARKCOREDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DARKCOREDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DARKCOREDataSet.xss">
+      <DependentUpon>DARKCOREDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
