@@ -18,7 +18,7 @@ namespace MESSI_M20
         Dictionary<string, string> codes_coords = new Dictionary<string, string>();
         Font fnt = new Font("Dubai", 12);
 
-        //bool verify = true;
+        bool verify = true;
 
         public Frm_Admin_Coords()
         {
@@ -34,7 +34,7 @@ namespace MESSI_M20
             frm.ShowDialog();
         }
         #endregion
-        /*
+        
         // Connexió a Base de Dades
         #region Connexió a Base de Dades
 
@@ -97,29 +97,32 @@ namespace MESSI_M20
         #endregion
 
         #endregion
-        */
+        
 
         // Boto per a generar una taula
         #region Generar taula
         private void btn_generate_Click(object sender, EventArgs e)
         {
+            // Controls de la Taula
             table_layout_pnl_coord.Hide();
             table_layout_pnl_coord.Controls.Clear();
             codes_coords.Clear();
-            int limit = 20, count, rowCount;
 
-            verify_generate_button = true;
-            imprimir = true;
+            // Varianbles del mètode
+            int limit = 20, count, rowCount;
 
             HashSet<string> codes_list = new HashSet<string>();
             string[] codes = new string[limit];
 
+            // Inicialitzacions
             codes_list = Generate_Codes(codes_list, ref limit, codes);
-
             codes = codes_list.ToArray();
+            verify_generate_button = true;
+            imprimir = true;
 
+            // Label Cantonada Superior Esquerra (Buida)
             Label lbl_main = new Label();
-            lbl_main.Font = fnt;
+            //lbl_main.Font = fnt;
             lbl_main.Text = "";
             lbl_main.TextAlign = ContentAlignment.MiddleCenter;
             lbl_main.Dock = DockStyle.Fill;
@@ -161,7 +164,7 @@ namespace MESSI_M20
 
                 imprimir = false;
             }
-            /*
+            
             if (verify)
             {
                 foreach (KeyValuePair<string, string> keyValue in codes_coords)
@@ -171,14 +174,12 @@ namespace MESSI_M20
                     DataR["DictValue"] = codes_coords.Values;
                     dts.Tables[0].Rows.Add(DataR);
                 }
-            }*/
+            }
 
-            //UpdateDB();
-            //QueryDB();
+            UpdateDB();
+            QueryDB();
 
-            //verify = false;
-
-            
+            verify = false;
         }
 
         private HashSet<string> Generate_Codes(HashSet<string> codes_hash, ref int limit, string[] codes)
