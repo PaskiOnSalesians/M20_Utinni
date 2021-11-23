@@ -189,7 +189,7 @@ namespace MESSI_M20
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(901, 473);
+            this.ClientSize = new System.Drawing.Size(883, 473);
             this.Controls.Add(this.btn_return_apanel);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnRegister);

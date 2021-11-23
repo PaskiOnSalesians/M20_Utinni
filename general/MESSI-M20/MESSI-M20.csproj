@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\dll\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -45,6 +45,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="TransparentLabel, Version=1.0.7997.32876, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\TransparentLabel.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Frm_Admin.cs">
@@ -76,6 +80,12 @@
     </Compile>
     <Compile Include="Frm_GestioUsuaris.Designer.cs">
       <DependentUpon>Frm_GestioUsuaris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Planols.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Planols.Designer.cs">
+      <DependentUpon>frm_Planols.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Principal.cs">
       <SubType>Form</SubType>
@@ -111,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_GestioUsuaris.resx">
       <DependentUpon>Frm_GestioUsuaris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Planols.resx">
+      <DependentUpon>frm_Planols.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Principal.resx">
       <DependentUpon>Frm_Principal.cs</DependentUpon>
@@ -151,6 +164,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\jawahead2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StarKiller\detall3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

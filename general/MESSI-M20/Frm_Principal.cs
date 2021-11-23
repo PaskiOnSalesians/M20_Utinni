@@ -14,15 +14,14 @@ namespace Users
         {
             InitializeComponent();
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void btnLeft1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            MessageBox.Show("1");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
         }
     }
 }

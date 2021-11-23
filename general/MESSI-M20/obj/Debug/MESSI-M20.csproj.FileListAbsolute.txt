@@ -101,3 +101,8 @@ C:\Users\oriol\Desktop\Github\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.c
 C:\Users\oriol\Desktop\Github\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache
 C:\Users\oriol\Desktop\Github\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.exe
 C:\Users\oriol\Desktop\Github\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.pdb
+C:\Users\oriol\Desktop\Github\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.frm_Planols.resources
+C:\Users\oriol\Desktop\Github\M20-Utinni\general\dll\MESSI-M20.exe.config
+C:\Users\oriol\Desktop\Github\M20-Utinni\general\dll\MESSI-M20.exe
+C:\Users\oriol\Desktop\Github\M20-Utinni\general\dll\MESSI-M20.pdb
+C:\Users\oriol\Desktop\Github\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.CopyComplete
