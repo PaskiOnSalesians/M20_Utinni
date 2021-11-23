@@ -16,6 +16,7 @@ namespace MESSI_M20
         Dictionary<string, string> codes_coords = new Dictionary<string, string>();
         Font fnt = new Font("Dubai", 12);
 
+        // Patata
         public Frm_Admin_Coords()
         {
             InitializeComponent();
