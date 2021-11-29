@@ -97,7 +97,6 @@ namespace MESSI_M20
         #endregion
 
         #endregion
-        
 
         // Boto per a generar una taula
         #region Generar taula
@@ -182,6 +181,8 @@ namespace MESSI_M20
             verify = false;
         }
 
+        // Generar Codis
+        #region Generar Codis
         private HashSet<string> Generate_Codes(HashSet<string> codes_hash, ref int limit, string[] codes)
         {
             int limit_codis = 20; // limit de codis a generar
@@ -208,7 +209,7 @@ namespace MESSI_M20
 
         #endregion
 
-        // Boto per a ensenyar la taula
+        // Botó per a ensenyar la taula
         #region Botó Show
         private void btn_show_Click(object sender, EventArgs e)
         {    
@@ -232,6 +233,17 @@ namespace MESSI_M20
                 table_layout_pnl_coord.Visible = true;
             }
         }
+        #endregion
+
+        // Events
+        #region Events
+        private void Frm_Admin_Coords_Load(object sender, EventArgs e)
+        {
+            this.DARKCORETableAdapter.Fill(this.darkcoreDataSet.AdminCoordinates);
+            ConnectDB();
+            QueryDB();
+        }
+        #endregion
 
         #endregion
     }

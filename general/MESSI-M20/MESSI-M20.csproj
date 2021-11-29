@@ -47,6 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DARKCOREDataSet.cs">
+      <DependentUpon>DARKCOREDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DARKCOREDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
