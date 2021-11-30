@@ -60,6 +60,12 @@ namespace MESSI_M20
             cns = new SqlConnection(connexio);
         }
 
+        private DataSet PortarPerConsulta(string query, string taula)
+        {
+
+            return;
+        }
+
         // Consulta a Base de Dades
         private void QueryDB()
         {
@@ -166,11 +172,11 @@ namespace MESSI_M20
             
             if (verify)
             {
-                foreach (KeyValuePair<string, string> keyValue in codes_coords)
+                foreach (var keyValue in codes_coords)
                 {
                     DataRow DataR = dts.Tables[0].NewRow();
-                    DataR["DictKey"] = codes_coords.Keys;
-                    DataR["DictValue"] = codes_coords.Values;
+                    DataR["DictKey"] = keyValue.Key;
+                    DataR["DictValue"] = keyValue.Value;
                     dts.Tables[0].Rows.Add(DataR);
                 }
             }
@@ -239,7 +245,7 @@ namespace MESSI_M20
         #region Events
         private void Frm_Admin_Coords_Load(object sender, EventArgs e)
         {
-            this.DARKCORETableAdapter.Fill(this.darkcoreDataSet.AdminCoordinates);
+            //this.DARKCORETableAdapter.Fill(this.darkcoreDataSet.AdminCoordinates);
             ConnectDB();
             QueryDB();
         }
