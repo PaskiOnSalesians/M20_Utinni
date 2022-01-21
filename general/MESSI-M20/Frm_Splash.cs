@@ -44,7 +44,7 @@ namespace MESSI_M20
         #region Events de Tecles Rapides
         private void formSplash_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.Alt && e.KeyCode == Keys.F2)
+            if(e.KeyCode == Keys.R)
             {
                 verifyAdmin = true;
                 this.Hide();

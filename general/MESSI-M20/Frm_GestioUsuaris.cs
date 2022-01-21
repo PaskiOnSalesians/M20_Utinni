@@ -19,11 +19,11 @@ namespace MESSI_M20
             InitializeComponent();
 
             string mac_address;
+            // Oriol: Mhe carregat lo de la mac pq al meu pc no la pilla i em peta
+            //mac_address = GetMacAddress().ToString();
 
-            mac_address = GetMacAddress().ToString();
-
-            txtMAC.Text = mac_address;
-            txtHostName.Text = Environment.MachineName;
+            //txtMAC.Text = mac_address;
+            //txtHostName.Text = Environment.MachineName;
         }
 
         private static PhysicalAddress GetMacAddress()

@@ -17,5 +17,9 @@ namespace MESSI_M20
             InitializeComponent();
         }
 
+        private void btnBlueprints_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
