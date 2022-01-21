@@ -81,23 +81,23 @@
     <Compile Include="Frm_GestioUsuaris.Designer.cs">
       <DependentUpon>Frm_GestioUsuaris.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_Planols.cs">
+    <Compile Include="Frm_Planols.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_Planols.Designer.cs">
-      <DependentUpon>frm_Planols.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frm_Principal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frm_Principal.Designer.cs">
-      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    <Compile Include="Frm_Planols.Designer.cs">
+      <DependentUpon>Frm_Planols.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Splash.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frm_Splash.Designer.cs">
       <DependentUpon>Frm_Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_UserMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_UserMain.Designer.cs">
+      <DependentUpon>Frm_UserMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_Users.cs">
       <SubType>Form</SubType>
@@ -122,14 +122,14 @@
     <EmbeddedResource Include="Frm_GestioUsuaris.resx">
       <DependentUpon>Frm_GestioUsuaris.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_Planols.resx">
-      <DependentUpon>frm_Planols.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Principal.resx">
-      <DependentUpon>Frm_Principal.cs</DependentUpon>
+    <EmbeddedResource Include="Frm_Planols.resx">
+      <DependentUpon>Frm_Planols.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Splash.resx">
       <DependentUpon>Frm_Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_UserMain.resx">
+      <DependentUpon>Frm_UserMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Users.resx">
       <DependentUpon>Frm_Users.cs</DependentUpon>

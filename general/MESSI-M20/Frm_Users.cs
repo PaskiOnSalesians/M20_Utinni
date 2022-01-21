@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using MESSI_M20;
 
 namespace Users
 {
@@ -22,7 +23,7 @@ namespace Users
         #region Login+Intents
         private void button1_Click(object sender, EventArgs e)
         {
-            frm_principal principal = new frm_principal();
+            Frm_UserMain principal = new Frm_UserMain();
             
             if (txt_box_user.Text == "hola" && textBox2.Text == "hola")
             {

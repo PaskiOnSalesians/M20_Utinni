@@ -1,7 +1,7 @@
 ﻿
 namespace MESSI_M20
 {
-    partial class frm_Planols
+    partial class Frm_Planols
     {
         /// <summary>
         /// Required designer variable.
@@ -31,10 +31,10 @@ namespace MESSI_M20
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblText = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlBP1 = new System.Windows.Forms.Panel();
             this.btnBlueprints = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlBP2 = new System.Windows.Forms.Panel();
+            this.pnlBP3 = new System.Windows.Forms.Panel();
             this.picBig = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBig)).BeginInit();
             this.SuspendLayout();
@@ -58,18 +58,19 @@ namespace MESSI_M20
             this.lblText.Location = new System.Drawing.Point(833, 367);
             this.lblText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(548, 300);
+            this.lblText.Size = new System.Drawing.Size(722, 300);
             this.lblText.TabIndex = 1;
             this.lblText.Text = "text";
             // 
-            // panel1
+            // pnlBP1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel1.Location = new System.Drawing.Point(187, 198);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(88, 75);
-            this.panel1.TabIndex = 2;
+            this.pnlBP1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlBP1.Location = new System.Drawing.Point(345, 276);
+            this.pnlBP1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlBP1.Name = "pnlBP1";
+            this.pnlBP1.Size = new System.Drawing.Size(88, 75);
+            this.pnlBP1.TabIndex = 2;
+            this.pnlBP1.Visible = false;
             // 
             // btnBlueprints
             // 
@@ -87,23 +88,25 @@ namespace MESSI_M20
             this.btnBlueprints.UseVisualStyleBackColor = false;
             this.btnBlueprints.Click += new System.EventHandler(this.btnBlueprints_Click);
             // 
-            // panel2
+            // pnlBP2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel2.Location = new System.Drawing.Point(439, 356);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(88, 75);
-            this.panel2.TabIndex = 6;
+            this.pnlBP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlBP2.Location = new System.Drawing.Point(549, 548);
+            this.pnlBP2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlBP2.Name = "pnlBP2";
+            this.pnlBP2.Size = new System.Drawing.Size(88, 75);
+            this.pnlBP2.TabIndex = 6;
+            this.pnlBP2.Visible = false;
             // 
-            // panel3
+            // pnlBP3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel3.Location = new System.Drawing.Point(133, 388);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(88, 75);
-            this.panel3.TabIndex = 7;
+            this.pnlBP3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.pnlBP3.Location = new System.Drawing.Point(133, 490);
+            this.pnlBP3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnlBP3.Name = "pnlBP3";
+            this.pnlBP3.Size = new System.Drawing.Size(88, 75);
+            this.pnlBP3.TabIndex = 7;
+            this.pnlBP3.Visible = false;
             // 
             // picBig
             // 
@@ -111,26 +114,26 @@ namespace MESSI_M20
             this.picBig.Location = new System.Drawing.Point(45, 119);
             this.picBig.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.picBig.Name = "picBig";
-            this.picBig.Size = new System.Drawing.Size(521, 488);
+            this.picBig.Size = new System.Drawing.Size(677, 610);
             this.picBig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBig.TabIndex = 8;
             this.picBig.TabStop = false;
             // 
-            // frm_Planols
+            // Frm_Planols
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(1638, 987);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlBP3);
+            this.Controls.Add(this.pnlBP2);
             this.Controls.Add(this.btnBlueprints);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlBP1);
             this.Controls.Add(this.lblText);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.picBig);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frm_Planols";
+            this.Name = "Frm_Planols";
             this.Text = "Weapon Blueprints and Information";
             ((System.ComponentModel.ISupportInitialize)(this.picBig)).EndInit();
             this.ResumeLayout(false);
@@ -142,10 +145,10 @@ namespace MESSI_M20
 
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblText;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlBP1;
         private System.Windows.Forms.Button btnBlueprints;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlBP2;
+        private System.Windows.Forms.Panel pnlBP3;
         private System.Windows.Forms.PictureBox picBig;
     }
 }

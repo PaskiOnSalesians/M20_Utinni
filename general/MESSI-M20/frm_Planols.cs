@@ -10,16 +10,27 @@ using System.Windows.Forms;
 
 namespace MESSI_M20
 {
-    public partial class frm_Planols : Form
+    public partial class Frm_Planols : Form
     {
-        public frm_Planols()
+        public Frm_Planols()
         {
             InitializeComponent();
         }
 
         private void btnBlueprints_Click(object sender, EventArgs e)
         {
-
+            if (!pnlBP1.Visible)
+            {
+                pnlBP1.Visible = true;
+                pnlBP2.Visible = true;
+                pnlBP3.Visible = true;
+            } else
+            {
+                pnlBP1.Visible = false;
+                pnlBP2.Visible = false;
+                pnlBP3.Visible = false;
+            }
         }
+
     }
 }
