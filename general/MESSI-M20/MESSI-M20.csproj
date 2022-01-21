@@ -168,5 +168,8 @@
   <ItemGroup>
     <None Include="Resources\StarKiller\detall3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StarKiller\DSPlan.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
