@@ -32,5 +32,40 @@ namespace MESSI_M20
             }
         }
 
+        private void pnlBP1_MouseEnter(object sender, EventArgs e)
+        {
+            lblTitle.Text = "Water Gun";
+            lblText.Text = "text random de test";
+        }
+
+        private void pnlBP1_MouseLeave(object sender, EventArgs e)
+        {
+            lblTitle.Text = "";
+            lblText.Text = "";
+        }
+
+        private void pnlBP2_MouseEnter(object sender, EventArgs e)
+        {
+            lblTitle.Text = "Water Gun 2";
+            lblText.Text = "text random de test";
+        }
+
+        private void pnlBP2_MouseLeave(object sender, EventArgs e)
+        {
+            lblTitle.Text = "";
+            lblText.Text = "";
+        }
+
+        private void pnlBP3_MouseEnter(object sender, EventArgs e)
+        {
+            lblTitle.Text = "test 3";
+            lblText.Text = "";
+        }
+
+        private void pnlBP3_MouseLeave(object sender, EventArgs e)
+        {
+            lblTitle.Text = "";
+            lblText.Text = "";
+        }
     }
 }

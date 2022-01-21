@@ -44,23 +44,21 @@ namespace MESSI_M20
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(831, 119);
+            this.lblTitle.Location = new System.Drawing.Point(855, 119);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(102, 51);
+            this.lblTitle.Size = new System.Drawing.Size(0, 51);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "tittle";
             // 
             // lblText
             // 
             this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.lblText.ForeColor = System.Drawing.Color.White;
-            this.lblText.Location = new System.Drawing.Point(833, 367);
+            this.lblText.Location = new System.Drawing.Point(857, 363);
             this.lblText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(722, 300);
             this.lblText.TabIndex = 1;
-            this.lblText.Text = "text";
             // 
             // pnlBP1
             // 
@@ -71,6 +69,8 @@ namespace MESSI_M20
             this.pnlBP1.Size = new System.Drawing.Size(88, 75);
             this.pnlBP1.TabIndex = 2;
             this.pnlBP1.Visible = false;
+            this.pnlBP1.MouseEnter += new System.EventHandler(this.pnlBP1_MouseEnter);
+            this.pnlBP1.MouseLeave += new System.EventHandler(this.pnlBP1_MouseLeave);
             // 
             // btnBlueprints
             // 
@@ -97,6 +97,8 @@ namespace MESSI_M20
             this.pnlBP2.Size = new System.Drawing.Size(88, 75);
             this.pnlBP2.TabIndex = 6;
             this.pnlBP2.Visible = false;
+            this.pnlBP2.MouseEnter += new System.EventHandler(this.pnlBP2_MouseEnter);
+            this.pnlBP2.MouseLeave += new System.EventHandler(this.pnlBP2_MouseLeave);
             // 
             // pnlBP3
             // 
@@ -107,6 +109,8 @@ namespace MESSI_M20
             this.pnlBP3.Size = new System.Drawing.Size(88, 75);
             this.pnlBP3.TabIndex = 7;
             this.pnlBP3.Visible = false;
+            this.pnlBP3.MouseEnter += new System.EventHandler(this.pnlBP3_MouseEnter);
+            this.pnlBP3.MouseLeave += new System.EventHandler(this.pnlBP3_MouseLeave);
             // 
             // picBig
             // 
@@ -124,7 +128,7 @@ namespace MESSI_M20
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(1638, 987);
+            this.ClientSize = new System.Drawing.Size(2084, 995);
             this.Controls.Add(this.pnlBP3);
             this.Controls.Add(this.pnlBP2);
             this.Controls.Add(this.btnBlueprints);
