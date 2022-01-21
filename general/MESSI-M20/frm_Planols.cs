@@ -71,6 +71,7 @@ namespace MESSI_M20
 
         private void Frm_Planols_Load(object sender, EventArgs e)
         {
+            string title1, title2, title3, text1, text2, text3, img1, img2, img3;
             string filePath = "..\\MESSI-M20\\Resources\\info.xml";
 
             XmlReaderSettings settings = new XmlReaderSettings();
@@ -88,29 +89,6 @@ namespace MESSI_M20
                         break;
                     case XmlNodeType.Text:
                         Console.Write(reader.Value);
-                        break;
-                    case XmlNodeType.CDATA:
-                        Console.Write("<![CDATA[{0}]]>", reader.Value);
-                        break;
-                    case XmlNodeType.ProcessingInstruction:
-                        Console.Write("<?{0} {1}?>", reader.Name, reader.Value);
-                        break;
-                    case XmlNodeType.Comment:
-                        Console.Write("<!--{0}-->", reader.Value);
-                        break;
-                    case XmlNodeType.XmlDeclaration:
-                        Console.Write("<?xml version='1.0'?>");
-                        break;
-                    case XmlNodeType.Document:
-                        break;
-                    case XmlNodeType.DocumentType:
-                        Console.Write("<!DOCTYPE {0} [{1}]", reader.Name, reader.Value);
-                        break;
-                    case XmlNodeType.EntityReference:
-                        Console.Write(reader.Name);
-                        break;
-                    case XmlNodeType.EndElement:
-                        Console.Write("</{0}>", reader.Name);
                         break;
                 }
             }
