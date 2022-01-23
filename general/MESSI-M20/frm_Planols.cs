@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Xml;
+using System.Xml.Linq;
 
 namespace MESSI_M20
 {
@@ -71,27 +71,12 @@ namespace MESSI_M20
 
         private void Frm_Planols_Load(object sender, EventArgs e)
         {
-            string title1, title2, title3, text1, text2, text3, img1, img2, img3;
-            string filePath = "..\\MESSI-M20\\Resources\\info.xml";
+            string XMLfilePath = "..\\MESSI-M20\\Resources\\info.xml";
 
-            XmlReaderSettings settings = new XmlReaderSettings();
-            settings.DtdProcessing = DtdProcessing.Parse;
-            XmlReader reader = XmlReader.Create(filePath, settings);
+            XElement blueprints = null;
+            blueprints = XElement.Load(XMLfilePath);
 
-            reader.MoveToContent();
-            // Parse the file and display each of the nodes.
-            while (reader.Read())
-            {
-                switch (reader.NodeType)
-                {
-                    case XmlNodeType.Element:
-                        Console.Write("<{0}>", reader.Name);
-                        break;
-                    case XmlNodeType.Text:
-                        Console.Write(reader.Value);
-                        break;
-                }
-            }
+            var llistaAlumnes = blueprints.Elements("Detail");
         }
     }
 }
