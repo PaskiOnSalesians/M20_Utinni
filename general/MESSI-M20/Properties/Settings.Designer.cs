@@ -43,5 +43,15 @@ namespace MESSI_M20.Properties {
                 return ((string)(this["DarkCoreConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=51.83.97.10;Initial Catalog=DarkCore;User ID=sa;Password=12345aA.")]
+        public string DarkCoreConnectionString_Server {
+            get {
+                return ((string)(this["DarkCoreConnectionString_Server"]));
+            }
+        }
     }
 }

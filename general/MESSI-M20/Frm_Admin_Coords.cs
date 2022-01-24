@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace MESSI_M20
 {
@@ -54,16 +55,23 @@ namespace MESSI_M20
         // Funció de connexió
         private void ConnectDB()
         {
-            string connexio;
-            connexio = "Data Source=WHITEWOLF\\SQLEXPRESS;Initial Catalog=DarkCore;Integrated Security=True";
+            string cadena = "", connexio;
+            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["MESSIServer"];
+
+            if (settings != null)
+            {
+                cadena = settings.ConnectionString.ToString();
+            }
+
+            connexio = cadena;
 
             cns = new SqlConnection(connexio);
+            cns.Open();
         }
 
         private DataSet PortarPerConsulta(string query, string taula)
-        {
-
-            return;
+        { 
+            return null;
         }
 
         // Consulta a Base de Dades
