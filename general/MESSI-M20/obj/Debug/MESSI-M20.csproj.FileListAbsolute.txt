@@ -143,3 +143,4 @@ C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\Git
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.exe
 C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.pdb
+\\Mac\Home\Desktop\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_SpaceShips.resources
