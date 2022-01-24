@@ -87,6 +87,12 @@
     <Compile Include="Frm_Planols.Designer.cs">
       <DependentUpon>Frm_Planols.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_SpaceShips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SpaceShips.Designer.cs">
+      <DependentUpon>Frm_SpaceShips.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Splash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Planols.resx">
       <DependentUpon>Frm_Planols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SpaceShips.resx">
+      <DependentUpon>Frm_SpaceShips.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Splash.resx">
       <DependentUpon>Frm_Splash.cs</DependentUpon>
