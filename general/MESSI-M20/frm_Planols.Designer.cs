@@ -37,6 +37,7 @@ namespace MESSI_M20
             this.pnlBP3 = new System.Windows.Forms.Panel();
             this.picBig = new System.Windows.Forms.PictureBox();
             this.picBlueprints = new System.Windows.Forms.PictureBox();
+            this.btnSpaceShip = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picBig)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBlueprints)).BeginInit();
             this.SuspendLayout();
@@ -134,12 +135,29 @@ namespace MESSI_M20
             this.picBlueprints.TabIndex = 9;
             this.picBlueprints.TabStop = false;
             // 
+            // btnSpaceShip
+            // 
+            this.btnSpaceShip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btnSpaceShip.FlatAppearance.BorderSize = 0;
+            this.btnSpaceShip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSpaceShip.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
+            this.btnSpaceShip.ForeColor = System.Drawing.Color.White;
+            this.btnSpaceShip.Location = new System.Drawing.Point(305, 19);
+            this.btnSpaceShip.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSpaceShip.Name = "btnSpaceShip";
+            this.btnSpaceShip.Size = new System.Drawing.Size(184, 66);
+            this.btnSpaceShip.TabIndex = 10;
+            this.btnSpaceShip.Text = "Space Ship";
+            this.btnSpaceShip.UseVisualStyleBackColor = false;
+            this.btnSpaceShip.Click += new System.EventHandler(this.btnSpaceShip_Click);
+            // 
             // Frm_Planols
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(2546, 995);
+            this.Controls.Add(this.btnSpaceShip);
             this.Controls.Add(this.picBlueprints);
             this.Controls.Add(this.pnlBP3);
             this.Controls.Add(this.pnlBP2);
@@ -170,5 +188,6 @@ namespace MESSI_M20
         private System.Windows.Forms.Panel pnlBP3;
         private System.Windows.Forms.PictureBox picBig;
         private System.Windows.Forms.PictureBox picBlueprints;
+        private System.Windows.Forms.Button btnSpaceShip;
     }
 }

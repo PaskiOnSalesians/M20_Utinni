@@ -106,5 +106,12 @@ namespace MESSI_M20
                 ImageDetails.Add(n.Value);
             }
         }
+
+        private void btnSpaceShip_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Frm_SpaceShips frm = new Frm_SpaceShips();
+            frm.ShowDialog();
+        }
     }
 }
