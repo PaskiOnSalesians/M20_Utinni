@@ -36,9 +36,9 @@ namespace MESSI_M20
             this.pnlBP2 = new System.Windows.Forms.Panel();
             this.pnlBP3 = new System.Windows.Forms.Panel();
             this.picBig = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picBlueprints = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picBig)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlueprints)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -46,7 +46,7 @@ namespace MESSI_M20
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(1243, 206);
+            this.lblTitle.Location = new System.Drawing.Point(1341, 206);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(0, 51);
@@ -56,16 +56,16 @@ namespace MESSI_M20
             // 
             this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F);
             this.lblText.ForeColor = System.Drawing.Color.White;
-            this.lblText.Location = new System.Drawing.Point(884, 429);
+            this.lblText.Location = new System.Drawing.Point(1004, 429);
             this.lblText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblText.Name = "lblText";
-            this.lblText.Size = new System.Drawing.Size(1012, 300);
+            this.lblText.Size = new System.Drawing.Size(1253, 466);
             this.lblText.TabIndex = 1;
             // 
             // pnlBP1
             // 
             this.pnlBP1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.pnlBP1.Location = new System.Drawing.Point(343, 386);
+            this.pnlBP1.Location = new System.Drawing.Point(669, 364);
             this.pnlBP1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlBP1.Name = "pnlBP1";
             this.pnlBP1.Size = new System.Drawing.Size(88, 75);
@@ -84,7 +84,7 @@ namespace MESSI_M20
             this.btnBlueprints.Location = new System.Drawing.Point(45, 19);
             this.btnBlueprints.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBlueprints.Name = "btnBlueprints";
-            this.btnBlueprints.Size = new System.Drawing.Size(176, 62);
+            this.btnBlueprints.Size = new System.Drawing.Size(184, 66);
             this.btnBlueprints.TabIndex = 5;
             this.btnBlueprints.Text = "Blueprints";
             this.btnBlueprints.UseVisualStyleBackColor = false;
@@ -93,7 +93,7 @@ namespace MESSI_M20
             // pnlBP2
             // 
             this.pnlBP2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.pnlBP2.Location = new System.Drawing.Point(539, 302);
+            this.pnlBP2.Location = new System.Drawing.Point(429, 466);
             this.pnlBP2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlBP2.Name = "pnlBP2";
             this.pnlBP2.Size = new System.Drawing.Size(88, 75);
@@ -105,7 +105,7 @@ namespace MESSI_M20
             // pnlBP3
             // 
             this.pnlBP3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.pnlBP3.Location = new System.Drawing.Point(59, 130);
+            this.pnlBP3.Location = new System.Drawing.Point(61, 146);
             this.pnlBP3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pnlBP3.Name = "pnlBP3";
             this.pnlBP3.Size = new System.Drawing.Size(88, 75);
@@ -120,26 +120,27 @@ namespace MESSI_M20
             this.picBig.Location = new System.Drawing.Point(45, 119);
             this.picBig.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.picBig.Name = "picBig";
-            this.picBig.Size = new System.Drawing.Size(677, 610);
+            this.picBig.Size = new System.Drawing.Size(843, 776);
             this.picBig.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBig.TabIndex = 8;
             this.picBig.TabStop = false;
             // 
-            // pictureBox1
+            // picBlueprints
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(891, 130);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(278, 268);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.picBlueprints.Location = new System.Drawing.Point(1011, 128);
+            this.picBlueprints.Name = "picBlueprints";
+            this.picBlueprints.Size = new System.Drawing.Size(278, 268);
+            this.picBlueprints.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBlueprints.TabIndex = 9;
+            this.picBlueprints.TabStop = false;
             // 
             // Frm_Planols
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(2084, 995);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(2546, 995);
+            this.Controls.Add(this.picBlueprints);
             this.Controls.Add(this.pnlBP3);
             this.Controls.Add(this.pnlBP2);
             this.Controls.Add(this.btnBlueprints);
@@ -153,7 +154,7 @@ namespace MESSI_M20
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Frm_Planols_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBig)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBlueprints)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,6 +169,6 @@ namespace MESSI_M20
         private System.Windows.Forms.Panel pnlBP2;
         private System.Windows.Forms.Panel pnlBP3;
         private System.Windows.Forms.PictureBox picBig;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picBlueprints;
     }
 }
