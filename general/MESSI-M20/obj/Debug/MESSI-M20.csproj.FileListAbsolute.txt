@@ -118,3 +118,17 @@ C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.exe
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.pdb
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.AssemblyReference.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_AdminPanel.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin_Coords.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_GestioDispositius.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_GestioUsuaris.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\Users.frm_principal.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_Splash.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\Users.Frm_Users.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.Properties.Resources.resources
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.GenerateResource.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.exe
+C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.pdb
