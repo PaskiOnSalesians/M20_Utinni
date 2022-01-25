@@ -66,12 +66,18 @@ namespace MESSI_M20
             connexio = cadena;
 
             cns = new SqlConnection(connexio);
-            cns.Open();
         }
 
-        private DataSet PortarPerConsulta(string query, string taula)
-        { 
-            return null;
+        // Delete Data from Base de Dades
+        private void DeleteDB()
+        {
+            query = "delete from AdminCoordinates";
+            adapter = new SqlDataAdapter(query, cns);
+
+            cns.Open();
+            dts = new DataSet();
+            adapter.Fill(dts, "AdminCoordinates");
+            cns.Close();
         }
 
         // Consulta a Base de Dades
@@ -96,11 +102,11 @@ namespace MESSI_M20
             SqlDataAdapter adapter;
             adapter = new SqlDataAdapter(query, cns);
 
-            SqlCommandBuilder Cmd = new SqlCommandBuilder(adapter);
+            SqlCommandBuilder sqlBuilder = new SqlCommandBuilder(adapter);
 
             if (dts.HasChanges())
             {
-                sol = adapter.Update(dts.Tables[0]);
+                sol = adapter.Update(dts);
                 MessageBox.Show("S'han modificat: " + sol.ToString() + " registres.");
             }
 
@@ -110,12 +116,25 @@ namespace MESSI_M20
 
         #endregion
 
+
+        private void GetTables(DataSet dataSet)
+        {
+            // Get Each DataTable in the DataTableCollection and
+            // print each row value.
+            foreach (DataTable table in dataSet.Tables)
+                foreach (DataRow row in table.Rows)
+                    foreach (DataColumn column in table.Columns)
+                        if (row[column] != null)
+                            Console.WriteLine(row[column]);
+        }
+
         #endregion
 
         // Boto per a generar una taula
         #region Generar taula
         private void btn_generate_Click(object sender, EventArgs e)
         {
+            DeleteDB();
             // Controls de la Taula
             table_layout_pnl_coord.Hide();
             table_layout_pnl_coord.Controls.Clear();
@@ -180,13 +199,28 @@ namespace MESSI_M20
             
             if (verify)
             {
+                dts.Clear();
+                DataTable dt = new DataTable("AdminCoordinates");
+                dt.Columns.Add(new DataColumn("DictKey", typeof(string)));
+                dt.Columns.Add(new DataColumn("DictValue", typeof(string)));
+
+                dt.PrimaryKey = new DataColumn[] { dt.Columns["DictKey"] };
+
+                dts.Tables.Add(dt);
+
+                GetTables(dts);
+                Console.WriteLine("Patata");
+
                 foreach (var keyValue in codes_coords)
                 {
+                    //DataRow DataR = dt.NewRow();
                     DataRow DataR = dts.Tables[0].NewRow();
                     DataR["DictKey"] = keyValue.Key;
                     DataR["DictValue"] = keyValue.Value;
                     dts.Tables[0].Rows.Add(DataR);
+                    //dt.Rows.Add(DataR);
                 }
+                //dts.Tables.Add(dt);
             }
 
             UpdateDB();
@@ -253,7 +287,6 @@ namespace MESSI_M20
         #region Events
         private void Frm_Admin_Coords_Load(object sender, EventArgs e)
         {
-            //this.DARKCORETableAdapter.Fill(this.darkcoreDataSet.AdminCoordinates);
             ConnectDB();
             QueryDB();
         }

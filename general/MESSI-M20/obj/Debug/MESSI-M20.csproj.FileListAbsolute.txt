@@ -104,7 +104,6 @@ C:\Users\Paski\Desktop\GitHub Respositories\M20-Utinni\general\MESSI-M20\obj\Deb
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\bin\Debug\MESSI-M20.exe.config
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\bin\Debug\MESSI-M20.exe
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\bin\Debug\MESSI-M20.pdb
-C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.AssemblyReference.cache
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin.resources
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_AdminPanel.resources
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI_M20.Frm_Admin_Coords.resources
@@ -118,3 +117,4 @@ C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.CoreCompileInputs.cache
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.exe
 C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.pdb
+C:\Users\Paski\Documents\GitHub\M20-Utinni\general\MESSI-M20\obj\Debug\MESSI-M20.csproj.AssemblyReference.cache

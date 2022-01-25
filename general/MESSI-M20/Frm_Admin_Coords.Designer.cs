@@ -180,7 +180,6 @@ namespace MESSI_M20
         private System.Windows.Forms.Button btn_return_apanel;
         private System.Windows.Forms.Button btn_generate;
         private System.Windows.Forms.Button btn_show;
-        private DARKCOREDataSet darkcoreDataset;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel10;
     }
