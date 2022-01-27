@@ -66,6 +66,7 @@ namespace MESSI_M20
             connexio = cadena;
 
             cns = new SqlConnection(connexio);
+            cns.Open();
         }
 
         // Delete Data from Base de Dades
@@ -74,10 +75,10 @@ namespace MESSI_M20
             query = "delete from AdminCoordinates";
             adapter = new SqlDataAdapter(query, cns);
 
-            cns.Open();
+            //cns.Open();
             dts = new DataSet();
             adapter.Fill(dts, "AdminCoordinates");
-            cns.Close();
+            //cns.Close();
         }
 
         // Consulta a Base de Dades
@@ -86,10 +87,10 @@ namespace MESSI_M20
             query = "select * from AdminCoordinates";
             adapter = new SqlDataAdapter(query, cns);
 
-            cns.Open();
+            //cns.Open();
             dts = new DataSet();
             adapter.Fill(dts, "AdminCoordinates");
-            cns.Close();
+            //cns.Close();
         }
 
         // Funció per actualitzar la DB
@@ -97,7 +98,7 @@ namespace MESSI_M20
         {
             int sol;
 
-            cns.Open();
+            //cns.Open();
 
             SqlDataAdapter adapter;
             adapter = new SqlDataAdapter(query, cns);
@@ -106,11 +107,11 @@ namespace MESSI_M20
 
             if (dts.HasChanges())
             {
-                sol = adapter.Update(dts);
+                sol = adapter.Update(dts.Tables[0]);
                 MessageBox.Show("S'han modificat: " + sol.ToString() + " registres.");
             }
 
-            cns.Close();
+            //cns.Close();
             QueryDB();
         }
 
@@ -134,13 +135,12 @@ namespace MESSI_M20
         #region Generar taula
         private void btn_generate_Click(object sender, EventArgs e)
         {
-            DeleteDB();
             // Controls de la Taula
             table_layout_pnl_coord.Hide();
             table_layout_pnl_coord.Controls.Clear();
             codes_coords.Clear();
 
-            // Varianbles del mètode
+            // Variables del mètode
             int limit = 20, count, rowCount;
 
             HashSet<string> codes_list = new HashSet<string>();
@@ -199,17 +199,17 @@ namespace MESSI_M20
             
             if (verify)
             {
-                dts.Clear();
-                DataTable dt = new DataTable("AdminCoordinates");
-                dt.Columns.Add(new DataColumn("DictKey", typeof(string)));
-                dt.Columns.Add(new DataColumn("DictValue", typeof(string)));
+                //dts.Clear();
+                //DataTable dt = new DataTable("AdminCoordinates");
+                //dt.Columns.Add(new DataColumn("DictKey", typeof(string)));
+                //dt.Columns.Add(new DataColumn("DictValue", typeof(string)));
 
-                dt.PrimaryKey = new DataColumn[] { dt.Columns["DictKey"] };
+                //dt.PrimaryKey = new DataColumn[] { dt.Columns["DictKey"] };
 
-                dts.Tables.Add(dt);
+                //dts.Tables.Add(dt);
 
                 GetTables(dts);
-                Console.WriteLine("Patata");
+                //Console.WriteLine("Patata");
 
                 foreach (var keyValue in codes_coords)
                 {
@@ -221,12 +221,16 @@ namespace MESSI_M20
                     //dt.Rows.Add(DataR);
                 }
                 //dts.Tables.Add(dt);
+                verify = false;
+            }
+            else
+            {
+                DeleteDB();
+                verify = true;
             }
 
             UpdateDB();
             QueryDB();
-
-            verify = false;
         }
 
         // Generar Codis
