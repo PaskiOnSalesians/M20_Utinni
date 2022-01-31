@@ -75,10 +75,8 @@ namespace MESSI_M20
             query = "delete from AdminCoordinates";
             adapter = new SqlDataAdapter(query, cns);
 
-            //cns.Open();
             dts = new DataSet();
             adapter.Fill(dts, "AdminCoordinates");
-            //cns.Close();
         }
 
         // Consulta a Base de Dades
@@ -87,18 +85,14 @@ namespace MESSI_M20
             query = "select * from AdminCoordinates";
             adapter = new SqlDataAdapter(query, cns);
 
-            //cns.Open();
             dts = new DataSet();
             adapter.Fill(dts, "AdminCoordinates");
-            //cns.Close();
         }
 
         // Funció per actualitzar la DB
         private void UpdateDB()
         {
             int sol;
-
-            //cns.Open();
 
             SqlDataAdapter adapter;
             adapter = new SqlDataAdapter(query, cns);
@@ -110,24 +104,10 @@ namespace MESSI_M20
                 sol = adapter.Update(dts.Tables[0]);
                 MessageBox.Show("S'han modificat: " + sol.ToString() + " registres.");
             }
-
-            //cns.Close();
             QueryDB();
         }
 
         #endregion
-
-
-        private void GetTables(DataSet dataSet)
-        {
-            // Get Each DataTable in the DataTableCollection and
-            // print each row value.
-            foreach (DataTable table in dataSet.Tables)
-                foreach (DataRow row in table.Rows)
-                    foreach (DataColumn column in table.Columns)
-                        if (row[column] != null)
-                            Console.WriteLine(row[column]);
-        }
 
         #endregion
 
@@ -199,28 +179,13 @@ namespace MESSI_M20
             
             if (verify)
             {
-                //dts.Clear();
-                //DataTable dt = new DataTable("AdminCoordinates");
-                //dt.Columns.Add(new DataColumn("DictKey", typeof(string)));
-                //dt.Columns.Add(new DataColumn("DictValue", typeof(string)));
-
-                //dt.PrimaryKey = new DataColumn[] { dt.Columns["DictKey"] };
-
-                //dts.Tables.Add(dt);
-
-                GetTables(dts);
-                //Console.WriteLine("Patata");
-
                 foreach (var keyValue in codes_coords)
                 {
-                    //DataRow DataR = dt.NewRow();
                     DataRow DataR = dts.Tables[0].NewRow();
                     DataR["DictKey"] = keyValue.Key;
                     DataR["DictValue"] = keyValue.Value;
                     dts.Tables[0].Rows.Add(DataR);
-                    //dt.Rows.Add(DataR);
                 }
-                //dts.Tables.Add(dt);
                 verify = false;
             }
             else

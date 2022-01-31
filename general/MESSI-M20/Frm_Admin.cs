@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+using System.Data.SqlClient;
 
 namespace MESSI_M20
 {
@@ -39,8 +41,62 @@ namespace MESSI_M20
             ImprimirCoord();
             ImprimirKeypad(SaveArray(Encoded_Keypad));
             #endregion
+
+            verifyCode();
         }
 
+        // Acces a dades
+        #region Acces a dades
+
+        SqlConnection cns;
+        SqlDataAdapter adapter;
+        DataSet dts;
+        string query;
+
+        private void ConnectDB()
+        {
+            string cadena = "", connexio;
+            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["MESSIServer"];
+
+            if (settings != null)
+            {
+                cadena = settings.ConnectionString.ToString();
+            }
+
+            connexio = cadena;
+
+            cns = new SqlConnection(connexio);
+            cns.Open();
+        }
+
+        private void QueryDB(string query)
+        {
+            adapter = new SqlDataAdapter(query, cns);
+
+            dts = new DataSet();
+            adapter.Fill(dts, "AdminCoordinates");
+        }
+
+        #endregion
+
+        #region Comprovar codi
+
+        private void verifyCode()
+        {
+            ConnectDB();
+            QueryDB("select DictValue from AdminCoordinates where DictKey = '" + lbl_coord.Text + "'");
+
+            if (dts.Tables[0].Rows[0].Equals(txt_box_code.Text))
+            {
+                this.Hide();
+                Frm_AdminPanel frm = new Frm_AdminPanel();
+                frm.ShowDialog();
+                cns.Close();
+            }
+            
+        }
+
+        #endregion
 
         // Funcions relacionades amb les Coordenades
         #region Imprimir Coords
@@ -252,7 +308,7 @@ namespace MESSI_M20
 
         #endregion
 
-        // Verificar si TextBox on surt la contraseña esta ple
+        // Verificar si TextBox on surt la contrasenya esta ple
 
         #region Verificacio i limit del codi d'acces
         private Boolean FullTextBox()
