@@ -51,7 +51,7 @@ namespace MESSI_M20
         SqlConnection cns;
         SqlDataAdapter adapter;
         DataSet dts;
-        string query;
+        //string query;
 
         private void ConnectDB()
         {
@@ -86,14 +86,13 @@ namespace MESSI_M20
             ConnectDB();
             QueryDB("select DictValue from AdminCoordinates where DictKey = '" + lbl_coord.Text + "'");
 
-            if (dts.Tables[0].Rows[0].Equals(txt_box_code.Text))
+            if (dts.Tables[0].Rows[0].ToString().Equals(txt_box_code.Text))
             {
                 this.Hide();
                 Frm_AdminPanel frm = new Frm_AdminPanel();
                 frm.ShowDialog();
                 cns.Close();
             }
-            
         }
 
         #endregion
@@ -212,12 +211,7 @@ namespace MESSI_M20
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            if(txt_box_code.Text.ToString() == "1234")
-            {
-                this.Hide();
-                Frm_AdminPanel frm = new Frm_AdminPanel();
-                frm.ShowDialog();
-            }
+            verifyCode();
         }
 
         #endregion
