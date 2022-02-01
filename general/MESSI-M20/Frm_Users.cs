@@ -9,10 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+using AccesDades;
+
 namespace Users
 {
     public partial class Frm_Users : Form
     {
+        Dades _Dades = new Dades();
+        DataSet dts;
+
         int intents = 0;
         public Frm_Users()
         {
@@ -24,7 +29,7 @@ namespace Users
         {
             frm_principal principal = new frm_principal();
             
-            if (txt_box_user.Text == "hola" && textBox2.Text == "hola")
+            if (txtbox_user.Text =)
             {
                 this.Hide();
                 principal.Show();
@@ -45,14 +50,14 @@ namespace Users
                 {
                     using (StreamWriter StreamW = File.CreateText(path))
                     {
-                        StreamW.WriteLine(DateTime.Now.ToString() + ":" + txt_box_user.Text.ToString() + ":" + txt_box_user.Text);
+                        StreamW.WriteLine(DateTime.Now.ToString() + ":" + txtbox_user.Text.ToString() + ":" + txtbox_user.Text);
                     }
                 }
                 else
                 {
                     using (StreamWriter StreamW = File.CreateText(path))
                     {
-                        StreamW.WriteLine(DateTime.Now.ToString() + ":" + txt_box_user.Text.ToString() + ":" + txt_box_user.Text);
+                        StreamW.WriteLine(DateTime.Now.ToString() + ":" + txtbox_user.Text.ToString() + ":" + txtbox_user.Text);
                     }
                 }
 

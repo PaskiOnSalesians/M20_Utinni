@@ -11,10 +11,15 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
 
+using AccesDades;
+
 namespace MESSI_M20
 {
     public partial class Frm_Admin : Form
     {
+        Dades _Dades = new Dades();
+        DataSet dts = new DataSet();
+
         public Frm_Admin()
         {
             InitializeComponent();
@@ -41,57 +46,20 @@ namespace MESSI_M20
             ImprimirCoord();
             ImprimirKeypad(SaveArray(Encoded_Keypad));
             #endregion
-
-            verifyCode();
         }
-
-        // Acces a dades
-        #region Acces a dades
-
-        SqlConnection cns;
-        SqlDataAdapter adapter;
-        DataSet dts;
-        //string query;
-
-        private void ConnectDB()
-        {
-            string cadena = "", connexio;
-            ConnectionStringSettings settings = ConfigurationManager.ConnectionStrings["MESSIServer"];
-
-            if (settings != null)
-            {
-                cadena = settings.ConnectionString.ToString();
-            }
-
-            connexio = cadena;
-
-            cns = new SqlConnection(connexio);
-            cns.Open();
-        }
-
-        private void QueryDB(string query)
-        {
-            adapter = new SqlDataAdapter(query, cns);
-
-            dts = new DataSet();
-            adapter.Fill(dts, "AdminCoordinates");
-        }
-
-        #endregion
 
         #region Comprovar codi
 
         private void verifyCode()
         {
-            ConnectDB();
-            QueryDB("select DictValue from AdminCoordinates where DictKey = '" + lbl_coord.Text + "'");
+            _Dades.ConnectDB();
+            dts = _Dades.QueryDB("select DictValue from AdminCoordinates where DictKey = '" + lbl_coord.Text + "'");
 
             if (txt_box_code.Text.Equals(dts.Tables[0].Rows[0][0]))
             {
                 this.Hide();
                 Frm_AdminPanel frm = new Frm_AdminPanel();
                 frm.ShowDialog();
-                cns.Close();
             }
         }
 

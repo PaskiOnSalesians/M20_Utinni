@@ -154,5 +154,11 @@
   <ItemGroup>
     <None Include="Resources\jawahead2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesDades\AccesDades.csproj">
+      <Project>{817e82ba-ff82-46cc-acfb-5c5e71e61c33}</Project>
+      <Name>AccesDades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
