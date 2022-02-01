@@ -86,7 +86,7 @@ namespace MESSI_M20
             ConnectDB();
             QueryDB("select DictValue from AdminCoordinates where DictKey = '" + lbl_coord.Text + "'");
 
-            if (dts.Tables[0].Rows[0].ToString().Equals(txt_box_code.Text))
+            if (txt_box_code.Text.Equals(dts.Tables[0].Rows[0][0]))
             {
                 this.Hide();
                 Frm_AdminPanel frm = new Frm_AdminPanel();
