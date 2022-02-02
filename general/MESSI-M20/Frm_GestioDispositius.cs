@@ -24,14 +24,16 @@ namespace MESSI_M20
         {
             InitializeComponent();
 
-            controlDispositius();
-
             string mac_address;
 
             mac_address = GetMacAddress().ToString();
 
             txt_mac.Text = GetMACBeauty(mac_address);
             txt_hostname.Text = Environment.MachineName; //nom maquina
+
+            _Dades.ConnectDB();
+
+            controlDispositius();
         }
 
         #region Get MAC & Make it Beauty
@@ -89,25 +91,39 @@ namespace MESSI_M20
             dts = new DataSet();
 
             dts = _Dades.QueryDB("select * from TrustedDevices", "TrustedDevices");
-
-            if (registered == false)
+            try
             {
-                DataRow dr = dts.Tables[0].NewRow();
-                dr["idUser"] = dts.Tables[0].Rows.Count+1;
-                dr["MAC"] = GetMacAddress().ToString();
-                dr["Hostname"] = txt_hostname.Text;
-                dr["Trusted"] = "true";
-                dts.Tables[0].Rows.Add(dr);
+                if (registered == false)
+                {
+                    DataRow dr = dts.Tables[0].NewRow();
+                    dr["idUser"] = dts.Tables[0].Rows.Count + 1;
+                    dr["MAC"] = GetMacAddress().ToString();
+                    dr["Hostname"] = txt_hostname.Text;
+                    dr["Trusted"] = "true";
+                    dts.Tables[0].Rows.Add(dr);
 
-                _Dades.UpdateDB("select * from TrustedDevices","TrustedDevices", dts);
+                    _Dades.UpdateDB("select * from TrustedDevices", "TrustedDevices", dts);
+                }
             }
+            catch
+            {
+                MessageBox.Show("You don't have access.");
+            }
+            
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            if (registered == true)
+            try
             {
-                _Dades.DeleteDB("delete from TrustedDevices where MAC='"+ GetMacAddress().ToString() + "' and Hostname ='" + txt_hostname.Text + "'" , "TrustedDevices", dts);
+                if (registered == true)
+                {
+                    _Dades.DeleteDB("delete from TrustedDevices where MAC='" + GetMacAddress().ToString() + "' and Hostname ='" + txt_hostname.Text + "'", "TrustedDevices", dts);
+                }
+            }
+            catch
+            {
+                MessageBox.Show("You don't have access.");
             }
         }
 
@@ -118,24 +134,31 @@ namespace MESSI_M20
 
         private void controlDispositius()
         {
-            dts = _Dades.QueryDB("select Trusted from TrustedDevices where MAC ='" + txt_mac + "' and Hostname ='" + txt_hostname + "'", "TrustedDevices");
+            dts = _Dades.QueryDB("select Trusted from TrustedDevices where MAC ='" + GetMacAddress().ToString() + "' and Hostname ='" + txt_hostname.Text + "'", "TrustedDevices");
 
             foreach (DataRow dr in dts.Tables[0].Rows)
             {
                 int i = 0;
 
                 if (dts.Tables[0].Rows[i]["Trusted"].ToString().Equals("1"))
-                {
-                    MessageBox.Show("This device is trusted");
+                {   
                     registered = true;
                 }
                 else
                 {
-                    MessageBox.Show("This device is not trusted");
                     registered = false;
                 }
 
                 i++;
+            }
+
+            if(registered == true)
+            {
+                MessageBox.Show("This device is trusted");
+            }
+            else
+            {
+                MessageBox.Show("This device is not trusted");
             }
         }
     }
