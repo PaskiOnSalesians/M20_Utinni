@@ -29,9 +29,11 @@ namespace Users
         {
             frm_principal principal = new frm_principal();
             DataSet credentials = _Dades.QueryDB("select * from MessiUsers where Username = '" + txtbox_user.Text + "'");
+            DataSet TrustedDevice = _Dades.QueryDB("select Trusted from TrustedDevices where idUser = '" + credentials.Tables[0].Rows[0]["idUser"] + "'");
 
-
-            if (txtbox_user.Text.Equals(credentials.Tables[0].Rows[0]["Username"]) && txtbox_pass.Text.Equals(credentials.Tables[0].Rows[0]["Password"]))
+            if (txtbox_user.Text.Equals(credentials.Tables[0].Rows[0]["Username"]) &&
+                txtbox_pass.Text.Equals(credentials.Tables[0].Rows[0]["Password"]) &&
+                TrustedDevice.Tables[0].Rows[0]["Trusted"].ToString().Equals("True"))
             {
                 this.Hide();
                 principal.Show();
@@ -66,9 +68,9 @@ namespace Users
                 Image myimage = new Bitmap(@"ftp://51.83.97.10\home\utinni\M20\MESSI\amenaza.jpg");
 
                 lbl_intents.Visible = true;
-                panel1.BackgroundImage = myimage;
+                logo_app.BackgroundImage = myimage;
                 this.BackColor = Color.DarkRed;
-                timer1.Enabled = true;
+                timer_progress.Enabled = true;
             }
         }
 
@@ -84,11 +86,11 @@ namespace Users
         #region Timer
         private void timer1_Tick(object sender, EventArgs e)
         {
-            progressBar1.Increment(1);
+            loading_bar.Increment(1);
 
-            if (progressBar1.Value == progressBar1.Maximum)
+            if (loading_bar.Value == loading_bar.Maximum)
             {
-                timer1.Stop();
+                timer_progress.Stop();
                 Application.Exit();
             }
         }

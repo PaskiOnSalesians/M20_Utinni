@@ -20,8 +20,21 @@ namespace MESSI_M20
 
             mac_address = GetMacAddress().ToString();
 
-            txtMAC.Text = mac_address;
-            txtHostName.Text = Environment.MachineName; //nom maquina
+            txt_mac.Text = GetMACBeauty(mac_address);
+            txt_hostname.Text = Environment.MachineName; //nom maquina
+        }
+
+        private static string GetMACBeauty(string address)
+        {
+            for(int i = 0; i < address.Length; i++)
+            {
+                if(i % 2 == 0)
+                {
+                    address[i] += "-";
+                }
+            }
+
+            return "";
         }
 
         private static PhysicalAddress GetMacAddress()
@@ -36,7 +49,7 @@ namespace MESSI_M20
             return null;
         }
 
-        private void btn_return_apanel_Click(object sender, EventArgs e)
+        private void btn_return_Click(object sender, EventArgs e)
         {
             this.Hide();
             Frm_AdminPanel frm = new Frm_AdminPanel();

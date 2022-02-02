@@ -33,16 +33,16 @@ namespace Users
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Users));
             this.lbl_user = new System.Windows.Forms.Label();
             this.lbl_pass = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.logo_app = new System.Windows.Forms.Panel();
             this.txtbox_user = new System.Windows.Forms.TextBox();
             this.txtbox_pass = new System.Windows.Forms.TextBox();
             this.btn_login = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_close = new System.Windows.Forms.Button();
             this.lbl_number_error = new System.Windows.Forms.Label();
             this.lbl_error = new System.Windows.Forms.Label();
             this.lbl_intents = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.timer_progress = new System.Windows.Forms.Timer(this.components);
+            this.loading_bar = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // lbl_user
@@ -75,18 +75,18 @@ namespace Users
             this.lbl_pass.TabIndex = 1;
             this.lbl_pass.Text = "Password:";
             // 
-            // panel1
+            // logo_app
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.logo_app.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(48, 54);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(212, 169);
-            this.panel1.TabIndex = 2;
+            this.logo_app.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo_app.BackgroundImage")));
+            this.logo_app.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logo_app.Location = new System.Drawing.Point(48, 54);
+            this.logo_app.Margin = new System.Windows.Forms.Padding(2);
+            this.logo_app.Name = "logo_app";
+            this.logo_app.Size = new System.Drawing.Size(212, 169);
+            this.logo_app.TabIndex = 2;
             // 
             // txtbox_user
             // 
@@ -126,16 +126,16 @@ namespace Users
             this.btn_login.UseVisualStyleBackColor = true;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
-            // button2
+            // btn_close
             // 
-            this.button2.Location = new System.Drawing.Point(534, 8);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(57, 22);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "CLOSE";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_close.Location = new System.Drawing.Point(534, 8);
+            this.btn_close.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(57, 22);
+            this.btn_close.TabIndex = 6;
+            this.btn_close.Text = "CLOSE";
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.button2_Click);
             // 
             // lbl_number_error
             // 
@@ -174,19 +174,19 @@ namespace Users
             this.lbl_intents.Text = "Ha probat masses intents d\'inici :(";
             this.lbl_intents.Visible = false;
             // 
-            // timer1
+            // timer_progress
             // 
-            this.timer1.Interval = 40;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer_progress.Interval = 40;
+            this.timer_progress.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // progressBar1
+            // loading_bar
             // 
-            this.progressBar1.Location = new System.Drawing.Point(9, 8);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(2);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(94, 19);
-            this.progressBar1.TabIndex = 10;
-            this.progressBar1.Visible = false;
+            this.loading_bar.Location = new System.Drawing.Point(9, 8);
+            this.loading_bar.Margin = new System.Windows.Forms.Padding(2);
+            this.loading_bar.Name = "loading_bar";
+            this.loading_bar.Size = new System.Drawing.Size(94, 19);
+            this.loading_bar.TabIndex = 10;
+            this.loading_bar.Visible = false;
             // 
             // Frm_Users
             // 
@@ -194,15 +194,15 @@ namespace Users
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.ClientSize = new System.Drawing.Size(600, 292);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.loading_bar);
             this.Controls.Add(this.lbl_intents);
             this.Controls.Add(this.lbl_error);
             this.Controls.Add(this.lbl_number_error);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.txtbox_pass);
             this.Controls.Add(this.txtbox_user);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.logo_app);
             this.Controls.Add(this.lbl_pass);
             this.Controls.Add(this.lbl_user);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -219,16 +219,16 @@ namespace Users
 
         private System.Windows.Forms.Label lbl_user;
         private System.Windows.Forms.Label lbl_pass;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel logo_app;
         private System.Windows.Forms.TextBox txtbox_user;
         private System.Windows.Forms.TextBox txtbox_pass;
         private System.Windows.Forms.Button btn_login;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Label lbl_number_error;
         private System.Windows.Forms.Label lbl_error;
         private System.Windows.Forms.Label lbl_intents;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Timer timer_progress;
+        private System.Windows.Forms.ProgressBar loading_bar;
     }
 }
 
