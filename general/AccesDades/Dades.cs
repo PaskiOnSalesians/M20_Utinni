@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace AccesDades
 {
@@ -32,7 +33,7 @@ namespace AccesDades
             cns.Open();
         }
 
-        public DataSet QueryDB(string query)
+        public DataSet QueryDB(string query, string taula)
         {
             //ConnectDB();
             //DataSet dataSet = new DataSet();
@@ -42,9 +43,30 @@ namespace AccesDades
             adapter = new SqlDataAdapter(query, cns);
 
             dts = new DataSet();
-            adapter.Fill(dts, "AdminCoordinates");
+            adapter.Fill(dts, taula);
 
             return dts;
+        }
+
+        public void Actualitzar(string query, string taula, DataSet _dts)
+        {
+            int numReg;
+
+            ConnectDB();
+            SqlDataAdapter adapter = new SqlDataAdapter(query, cns);
+            SqlCommandBuilder sqlBuilder = new SqlCommandBuilder(adapter);
+
+            if (_dts.HasChanges())
+            {
+                numReg = adapter.Update(_dts, taula);
+                MessageBox.Show("Registres modificats: " + numReg.ToString());
+            }
+
+            if (cns != null)
+            {
+                cns.Close();
+                cns.Dispose();
+            }
         }
     }
 }

@@ -95,6 +95,7 @@ namespace MESSI_M20
             this.btn_Save.TabIndex = 4;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // btn_Delete
             // 
@@ -110,6 +111,7 @@ namespace MESSI_M20
             this.btn_Delete.TabIndex = 5;
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.UseVisualStyleBackColor = false;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // btn_return
             // 
@@ -146,6 +148,8 @@ namespace MESSI_M20
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_GestioDispositius";
             this.Text = "Trusted devices";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_GestioDispositius_FormClosing);
+            this.Load += new System.EventHandler(this.Frm_GestioDispositius_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

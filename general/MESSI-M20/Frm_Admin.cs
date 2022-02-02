@@ -53,7 +53,7 @@ namespace MESSI_M20
         private void verifyCode()
         {
             _Dades.ConnectDB();
-            dts = _Dades.QueryDB("select DictValue from AdminCoordinates where DictKey = '" + lbl_coord.Text + "'");
+            dts = _Dades.QueryDB("select DictValue from AdminCoordinates where DictKey = '" + lbl_coord.Text + "'", "AdminCoordinates");
 
             if (txt_box_code.Text.Equals(dts.Tables[0].Rows[0][0]))
             {

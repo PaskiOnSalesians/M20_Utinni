@@ -28,8 +28,8 @@ namespace Users
         private void btn_login_Click(object sender, EventArgs e)
         {
             frm_principal principal = new frm_principal();
-            DataSet credentials = _Dades.QueryDB("select * from MessiUsers where Username = '" + txtbox_user.Text + "'");
-            DataSet TrustedDevice = _Dades.QueryDB("select Trusted from TrustedDevices where idUser = '" + credentials.Tables[0].Rows[0]["idUser"] + "'");
+            DataSet credentials = _Dades.QueryDB("select * from MessiUsers where Username = '" + txtbox_user.Text + "'", "AdminCoordinates");
+            DataSet TrustedDevice = _Dades.QueryDB("select Trusted from TrustedDevices where idUser = '" + credentials.Tables[0].Rows[0]["idUser"] + "'", "AdminCoordinates");
 
             if (txtbox_user.Text.Equals(credentials.Tables[0].Rows[0]["Username"]) &&
                 txtbox_pass.Text.Equals(credentials.Tables[0].Rows[0]["Password"]) &&
