@@ -16,7 +16,7 @@ namespace Users
     public partial class Frm_Users : Form
     {
         Dades _Dades = new Dades();
-        DataSet dts;
+        //DataSet dts;
 
         int intents = 0;
         public Frm_Users()
@@ -25,26 +25,28 @@ namespace Users
         }
 
         #region Login+Intents
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_login_Click(object sender, EventArgs e)
         {
             frm_principal principal = new frm_principal();
-            
-            if (txtbox_user.Text =)
+            DataSet credentials = _Dades.QueryDB("select * from MessiUsers where Username = '" + txtbox_user.Text + "'");
+
+
+            if (txtbox_user.Text.Equals(credentials.Tables[0].Rows[0]["Username"]) && txtbox_pass.Text.Equals(credentials.Tables[0].Rows[0]["Password"]))
             {
                 this.Hide();
                 principal.Show();
-            }
+            } 
             else
             {
-                label3.Visible = true;
-                label4.Visible = true;
+                lbl_number_error.Visible = true;
+                lbl_error.Visible = true;
                 intents += 1;
-                label3.Text = Convert.ToString(intents);
+                lbl_number_error.Text = Convert.ToString(intents);
             }
 
             if (intents == 3)
             {
-                string path = @"sftp://51.83.97.10\home\utinni\M20\MESSI\Test.txt";
+                string path = @"ftp://51.83.97.10\home\utinni\M20\MESSI\Test.txt";
 
                 if (!File.Exists(path))
                 {
@@ -61,9 +63,9 @@ namespace Users
                     }
                 }
 
-                Image myimage = new Bitmap(@"sftp://51.83.97.10\home\utinni\M20\MESSI\amenaza.jpg");
+                Image myimage = new Bitmap(@"ftp://51.83.97.10\home\utinni\M20\MESSI\amenaza.jpg");
 
-                label5.Visible = true;
+                lbl_intents.Visible = true;
                 panel1.BackgroundImage = myimage;
                 this.BackColor = Color.DarkRed;
                 timer1.Enabled = true;
@@ -91,6 +93,13 @@ namespace Users
             }
         }
 
+        #endregion
+
+        #region Events
+        private void Frm_Users_Load(object sender, EventArgs e)
+        {
+            _Dades.ConnectDB();
+        }
         #endregion
     }
 }

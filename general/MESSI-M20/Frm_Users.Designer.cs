@@ -31,49 +31,49 @@ namespace Users
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Users));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_user = new System.Windows.Forms.Label();
+            this.lbl_pass = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtbox_user = new System.Windows.Forms.TextBox();
             this.txtbox_pass = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_login = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbl_number_error = new System.Windows.Forms.Label();
+            this.lbl_error = new System.Windows.Forms.Label();
+            this.lbl_intents = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
-            // label1
+            // lbl_user
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lbl_user.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(332, 85);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 21);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "User:";
+            this.lbl_user.AutoSize = true;
+            this.lbl_user.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lbl_user.ForeColor = System.Drawing.Color.White;
+            this.lbl_user.Location = new System.Drawing.Point(332, 85);
+            this.lbl_user.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_user.Name = "lbl_user";
+            this.lbl_user.Size = new System.Drawing.Size(45, 21);
+            this.lbl_user.TabIndex = 0;
+            this.lbl_user.Text = "User:";
             // 
-            // label2
+            // lbl_pass
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lbl_pass.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(301, 122);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 21);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Password:";
+            this.lbl_pass.AutoSize = true;
+            this.lbl_pass.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lbl_pass.ForeColor = System.Drawing.Color.White;
+            this.lbl_pass.Location = new System.Drawing.Point(301, 122);
+            this.lbl_pass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_pass.Name = "lbl_pass";
+            this.lbl_pass.Size = new System.Drawing.Size(79, 21);
+            this.lbl_pass.TabIndex = 1;
+            this.lbl_pass.Text = "Password:";
             // 
             // panel1
             // 
@@ -111,20 +111,20 @@ namespace Users
             this.txtbox_pass.Size = new System.Drawing.Size(151, 20);
             this.txtbox_pass.TabIndex = 4;
             // 
-            // button1
+            // btn_login
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btn_login.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(301, 172);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(227, 51);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "LOGIN";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_login.Font = new System.Drawing.Font("Segoe UI Black", 18F, System.Drawing.FontStyle.Bold);
+            this.btn_login.Location = new System.Drawing.Point(301, 172);
+            this.btn_login.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_login.Name = "btn_login";
+            this.btn_login.Size = new System.Drawing.Size(227, 51);
+            this.btn_login.TabIndex = 5;
+            this.btn_login.Text = "LOGIN";
+            this.btn_login.UseVisualStyleBackColor = true;
+            this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
             // 
             // button2
             // 
@@ -137,42 +137,42 @@ namespace Users
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label3
+            // lbl_number_error
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(361, 149);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "0";
-            this.label3.Visible = false;
+            this.lbl_number_error.AutoSize = true;
+            this.lbl_number_error.ForeColor = System.Drawing.Color.Red;
+            this.lbl_number_error.Location = new System.Drawing.Point(361, 149);
+            this.lbl_number_error.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_number_error.Name = "lbl_number_error";
+            this.lbl_number_error.Size = new System.Drawing.Size(13, 13);
+            this.lbl_number_error.TabIndex = 7;
+            this.lbl_number_error.Text = "0";
+            this.lbl_number_error.Visible = false;
             // 
-            // label4
+            // lbl_error
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(370, 149);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "intent/s erroni/s";
-            this.label4.Visible = false;
+            this.lbl_error.AutoSize = true;
+            this.lbl_error.ForeColor = System.Drawing.Color.Red;
+            this.lbl_error.Location = new System.Drawing.Point(370, 149);
+            this.lbl_error.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_error.Name = "lbl_error";
+            this.lbl_error.Size = new System.Drawing.Size(82, 13);
+            this.lbl_error.TabIndex = 8;
+            this.lbl_error.Text = "intent/s erroni/s";
+            this.lbl_error.Visible = false;
             // 
-            // label5
+            // lbl_intents
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(9, 242);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(459, 36);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Ha probat masses intents d\'inici :(";
-            this.label5.Visible = false;
+            this.lbl_intents.AutoSize = true;
+            this.lbl_intents.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F);
+            this.lbl_intents.ForeColor = System.Drawing.Color.Red;
+            this.lbl_intents.Location = new System.Drawing.Point(9, 242);
+            this.lbl_intents.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_intents.Name = "lbl_intents";
+            this.lbl_intents.Size = new System.Drawing.Size(459, 36);
+            this.lbl_intents.TabIndex = 9;
+            this.lbl_intents.Text = "Ha probat masses intents d\'inici :(";
+            this.lbl_intents.Visible = false;
             // 
             // timer1
             // 
@@ -195,20 +195,21 @@ namespace Users
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.ClientSize = new System.Drawing.Size(600, 292);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lbl_intents);
+            this.Controls.Add(this.lbl_error);
+            this.Controls.Add(this.lbl_number_error);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_login);
             this.Controls.Add(this.txtbox_pass);
             this.Controls.Add(this.txtbox_user);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbl_pass);
+            this.Controls.Add(this.lbl_user);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Users";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Frm_Users_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,16 +217,16 @@ namespace Users
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_user;
+        private System.Windows.Forms.Label lbl_pass;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtbox_user;
         private System.Windows.Forms.TextBox txtbox_pass;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbl_number_error;
+        private System.Windows.Forms.Label lbl_error;
+        private System.Windows.Forms.Label lbl_intents;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ProgressBar progressBar1;
     }
