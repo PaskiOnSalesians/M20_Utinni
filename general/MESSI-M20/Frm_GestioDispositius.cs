@@ -23,6 +23,9 @@ namespace MESSI_M20
         public Frm_GestioDispositius()
         {
             InitializeComponent();
+
+            controlDispositius();
+
             string mac_address;
 
             mac_address = GetMacAddress().ToString();
@@ -83,37 +86,56 @@ namespace MESSI_M20
 
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            // Hem d'afegir un nou usuari a la base de dades
+            dts = new DataSet();
+
+            dts = _Dades.QueryDB("select * from TrustedDevices", "TrustedDevices");
+
             if (registered == false)
             {
+                DataRow dr = dts.Tables[0].NewRow();
+                dr["idUser"] = dts.Tables[0].Rows.Count+1;
+                dr["MAC"] = GetMacAddress().ToString();
+                dr["Hostname"] = txt_hostname.Text;
+                dr["Trusted"] = "true";
+                dts.Tables[0].Rows.Add(dr);
 
+                _Dades.UpdateDB("select * from TrustedDevices","TrustedDevices", dts);
             }
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            // Hem de borrar un usuari de la base de dades
             if (registered == true)
             {
-
+                _Dades.DeleteDB("delete from TrustedDevices where MAC='"+ GetMacAddress().ToString() + "' and Hostname ='" + txt_hostname.Text + "'" , "TrustedDevices", dts);
             }
         }
 
         private void Frm_GestioDispositius_Load(object sender, EventArgs e)
         {
             _Dades.ConnectDB();
+        }
 
-            dts = _Dades.QueryDB("select Trusted from TrustedDevices where MAC ='" + txt_mac + "' and Hostname ='" + txt_hostname + "'");
+        private void controlDispositius()
+        {
+            dts = _Dades.QueryDB("select Trusted from TrustedDevices where MAC ='" + txt_mac + "' and Hostname ='" + txt_hostname + "'", "TrustedDevices");
 
-            if (dts.Tables[0].Rows[0]["Trusted"].ToString().Equals("True"))
+            foreach (DataRow dr in dts.Tables[0].Rows)
             {
-                MessageBox.Show("This device is trusted");
-                registered = true;
-            }
-            else
-            {
-                MessageBox.Show("This device is not trusted");
-                registered = false;
+                int i = 0;
+
+                if (dts.Tables[0].Rows[i]["Trusted"].ToString().Equals("1"))
+                {
+                    MessageBox.Show("This device is trusted");
+                    registered = true;
+                }
+                else
+                {
+                    MessageBox.Show("This device is not trusted");
+                    registered = false;
+                }
+
+                i++;
             }
         }
     }

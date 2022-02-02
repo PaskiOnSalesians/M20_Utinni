@@ -15,7 +15,7 @@ namespace AccesDades
         SqlConnection cns;
         SqlDataAdapter adapter;
         DataSet dts;
-        //string query;
+        
 
         public void ConnectDB()
         {
@@ -35,11 +35,6 @@ namespace AccesDades
 
         public DataSet QueryDB(string query, string taula)
         {
-            //ConnectDB();
-            //DataSet dataSet = new DataSet();
-            //new SqlDataAdapter(query, con).Fill(dataSet, nomtaula);
-            //return dataSet;
-
             adapter = new SqlDataAdapter(query, cns);
 
             dts = new DataSet();
@@ -48,7 +43,7 @@ namespace AccesDades
             return dts;
         }
 
-        public void Actualitzar(string query, string taula, DataSet _dts)
+        public void UpdateDB(string query, string taula, DataSet _dts)
         {
             int numReg;
 
@@ -67,6 +62,14 @@ namespace AccesDades
                 cns.Close();
                 cns.Dispose();
             }
+        }
+
+        public void DeleteDB(string query, string taula, DataSet dts)
+        {
+            adapter = new SqlDataAdapter(query, cns);
+
+            dts = new DataSet();
+            adapter.Fill(dts, taula);
         }
     }
 }
