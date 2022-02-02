@@ -44,7 +44,7 @@ namespace Users
 
             if (intents == 3)
             {
-                string path = @"C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Documentos\DAM\S2AM\M20\Test.txt";
+                string path = @"sftp://51.83.97.10\home\utinni\M20\MESSI\Test.txt";
 
                 if (!File.Exists(path))
                 {
@@ -61,7 +61,7 @@ namespace Users
                     }
                 }
 
-                Image myimage = new Bitmap(@"C:\Users\carsh\OneDrive - INSPECTORIA SALESIANA MARIA AUXILIADORA\Imágenes\app\amenaza.jpg");
+                Image myimage = new Bitmap(@"sftp://51.83.97.10\home\utinni\M20\MESSI\amenaza.jpg");
 
                 label5.Visible = true;
                 panel1.BackgroundImage = myimage;
