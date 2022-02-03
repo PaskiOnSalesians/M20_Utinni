@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Net.NetworkInformation;
@@ -18,7 +19,7 @@ namespace MESSI_M20
         Dades _Dades = new Dades();
         DataSet dts = new DataSet();
 
-        bool registered;
+        Boolean registered;
 
         public Frm_GestioDispositius()
         {
@@ -90,24 +91,27 @@ namespace MESSI_M20
         {
             dts = new DataSet();
 
-            dts = _Dades.QueryDB("select * from TrustedDevices", "TrustedDevices");
             try
             {
                 if (registered == false)
                 {
+                    dts = _Dades.QueryDB("select * from TrustedDevices", "TrustedDevices");
+
                     DataRow dr = dts.Tables[0].NewRow();
                     dr["idUser"] = dts.Tables[0].Rows.Count + 1;
                     dr["MAC"] = GetMacAddress().ToString();
                     dr["Hostname"] = txt_hostname.Text;
-                    dr["Trusted"] = "true";
+                    dr["Trusted"] = "True";
                     dts.Tables[0].Rows.Add(dr);
+
+                    registered = true;
 
                     _Dades.UpdateDB("select * from TrustedDevices", "TrustedDevices", dts);
                 }
             }
             catch
             {
-                MessageBox.Show("You don't have access.");
+                MessageBox.Show("You don't have access to save Data, because your device is already trusted.");
             }
             
         }
@@ -118,12 +122,16 @@ namespace MESSI_M20
             {
                 if (registered == true)
                 {
-                    _Dades.DeleteDB("delete from TrustedDevices where MAC='" + GetMacAddress().ToString() + "' and Hostname ='" + txt_hostname.Text + "'", "TrustedDevices", dts);
+                    _Dades.DeleteDB("delete from TrustedDevices where MAC='" + GetMacAddress().ToString() + "' and Hostname ='" + txt_hostname.Text + "'", "TrustedDevices");
+
+                    registered = false;
+
+                    MessageBox.Show("Device deleted.");
                 }
             }
             catch
             {
-                MessageBox.Show("You don't have access.");
+                MessageBox.Show("You don't have access to delete Data, because your device is not trusted yet.");
             }
         }
 
@@ -134,31 +142,28 @@ namespace MESSI_M20
 
         private void controlDispositius()
         {
-            dts = _Dades.QueryDB("select Trusted from TrustedDevices where MAC ='" + GetMacAddress().ToString() + "' and Hostname ='" + txt_hostname.Text + "'", "TrustedDevices");
+            dts = new DataSet();
+            dts = _Dades.QueryDB("select * from TrustedDevices where MAC ='" + GetMacAddress().ToString() + "' and Hostname ='" + txt_hostname.Text + "'", "TrustedDevices");
 
-            foreach (DataRow dr in dts.Tables[0].Rows)
+            if (dts.Tables[0].Rows.Count > 0)
             {
-                int i = 0;
-
-                if (dts.Tables[0].Rows[i]["Trusted"].ToString().Equals("1"))
-                {   
+                if (dts.Tables[0].Rows[0]["Trusted"].ToString().Equals("True"))
+                {
                     registered = true;
                 }
                 else
                 {
                     registered = false;
                 }
-
-                i++;
             }
 
             if(registered == true)
             {
-                MessageBox.Show("This device is trusted");
+                MessageBox.Show("This device is trusted.", "MESSI DEVICE VERIFICATOR");
             }
             else
             {
-                MessageBox.Show("This device is not trusted");
+                MessageBox.Show("This device is not trusted.", "MESSI DEVICE VERIFICATOR");
             }
         }
     }

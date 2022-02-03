@@ -64,12 +64,13 @@ namespace AccesDades
             }
         }
 
-        public void DeleteDB(string query, string taula, DataSet dts)
+        public void DeleteDB(string query, string taula)
         {
             adapter = new SqlDataAdapter(query, cns);
 
             dts = new DataSet();
             adapter.Fill(dts, taula);
+            //return dts;
         }
     }
 }

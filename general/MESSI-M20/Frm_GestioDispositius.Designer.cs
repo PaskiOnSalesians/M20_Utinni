@@ -69,6 +69,7 @@ namespace MESSI_M20
             this.txt_mac.Location = new System.Drawing.Point(153, 89);
             this.txt_mac.Margin = new System.Windows.Forms.Padding(2);
             this.txt_mac.Name = "txt_mac";
+            this.txt_mac.ReadOnly = true;
             this.txt_mac.Size = new System.Drawing.Size(264, 30);
             this.txt_mac.TabIndex = 2;
             // 
@@ -78,6 +79,7 @@ namespace MESSI_M20
             this.txt_hostname.Location = new System.Drawing.Point(153, 128);
             this.txt_hostname.Margin = new System.Windows.Forms.Padding(2);
             this.txt_hostname.Name = "txt_hostname";
+            this.txt_hostname.ReadOnly = true;
             this.txt_hostname.Size = new System.Drawing.Size(264, 30);
             this.txt_hostname.TabIndex = 3;
             // 
