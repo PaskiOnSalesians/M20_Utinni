@@ -51,7 +51,12 @@ namespace MESSI_M20
 
             dts = new DataSet();
 
-            dts = _Dades.QueryDB();
+            dts = _Dades.QueryDB("select * from Users", "Users");
+
+            foreach (DataRow dr in dts.Tables[0].Rows)
+            {
+
+            }
 
             return users;
         }
