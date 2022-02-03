@@ -10,22 +10,28 @@ using System.Net.NetworkInformation;
 using System.Windows.Forms;
 using System.Configuration;
 
+using AccesDades;
+
 namespace MESSI_M20
 {
     public partial class Frm_GestioUsuaris : Form
     {
+        Dades _Dades = new Dades();
+        DataSet dts;
+
         public Frm_GestioUsuaris()
         {
             InitializeComponent();
 
             string mac_address;
 
-            mac_address = GetMacAddress().ToString();
+            mac_address = GetMACBeauty(GetMacAddress().ToString());
 
-            txtMAC.Text = mac_address;
-            txtHostName.Text = Environment.MachineName;
+            txtbox_mac.Text = mac_address;
+            txt_hostname.Text = Environment.MachineName;
         }
 
+        #region Get MAC address
         private static PhysicalAddress GetMacAddress()
         {
             foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
@@ -36,6 +42,18 @@ namespace MESSI_M20
                 }
             }
             return null;
+        }
+        #endregion
+
+        private string[] getUsers()
+        {
+            string[] users;
+
+            dts = new DataSet();
+
+            dts = _Dades.QueryDB();
+
+            return users;
         }
 
         private void btn_return_apanel_Click(object sender, EventArgs e)
@@ -48,11 +66,12 @@ namespace MESSI_M20
         private void btnRegister_Click(object sender, EventArgs e)
         {
             //ReadAllSettings();
-            AddUpdateAppSettings("TrustedUser", cmbUsers.Text);
+            AddUpdateAppSettings("TrustedUser", cmbox_users.Text);
             //ReadSetting("TrustedUser");
             ReadAllSettings();
         }
 
+        #region App.config
         static void ReadAllSettings()
         {
             try
@@ -113,5 +132,34 @@ namespace MESSI_M20
                 Console.WriteLine("Error writing app settings");
             }
         }
+        #endregion
+
+        #region Beautiful MAC address
+        private static string GetMACBeauty(string address)
+        {
+            string mac = "";
+
+            for (int i = 0; i < address.Length; i++)
+            {
+                if (i % 2 == 0 && i != 0)
+                {
+                    mac += "-" + address[i];
+                }
+                else
+                {
+                    mac += address[i];
+                }
+            }
+
+            return mac;
+        }
+        #endregion
+
+        #region Close App
+        private void Frm_GestioUsuaris_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+        #endregion
     }
 }
