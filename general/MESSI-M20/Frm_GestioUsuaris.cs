@@ -47,15 +47,16 @@ namespace MESSI_M20
 
         private string[] getUsers()
         {
-            string[] users;
-
             dts = new DataSet();
 
             dts = _Dades.QueryDB("select * from Users", "Users");
 
-            foreach (DataRow dr in dts.Tables[0].Rows)
+            string[] users = new string[dts.Tables[0].Rows.Count];
+
+            for (int i = 0; i < dts.Tables[0].Rows.Count; i++)
             {
 
+                users[i] = dts.Tables[0].Rows[i]["Username"].ToString();
             }
 
             return users;
@@ -166,5 +167,17 @@ namespace MESSI_M20
             Application.Exit();
         }
         #endregion
+
+        private void Frm_GestioUsuaris_Load(object sender, EventArgs e)
+        {
+            _Dades.ConnectDB();
+
+            string[] users = getUsers();
+
+            for (int i = 0; i < users.Length; i++)
+            {
+                cmbox_users.Items.Add(users[i]);
+            }
+        }
     }
 }
