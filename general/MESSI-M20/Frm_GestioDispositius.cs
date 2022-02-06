@@ -59,9 +59,19 @@ namespace MESSI_M20
 
         private static PhysicalAddress GetMacAddress()
         {
+            // Wifi
+            //foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
+            //{
+            //    if (nic.OperationalStatus == OperationalStatus.Up && (nic.NetworkInterfaceType == NetworkInterfaceType.Wireless80211))
+            //    {
+            //        return nic.GetPhysicalAddress();
+            //    }
+            //}
+
+            // Ethernet
             foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
             {
-                if (nic.OperationalStatus == OperationalStatus.Up && (nic.NetworkInterfaceType == NetworkInterfaceType.Wireless80211))
+                if (nic.OperationalStatus == OperationalStatus.Up && (nic.NetworkInterfaceType == NetworkInterfaceType.Ethernet))
                 {
                     return nic.GetPhysicalAddress();
                 }

@@ -19,6 +19,8 @@ namespace MESSI_M20
         Dades _Dades = new Dades();
         DataSet dts;
 
+        bool comprovarDispositiu;
+
         public Frm_GestioUsuaris()
         {
             InitializeComponent();
@@ -34,13 +36,24 @@ namespace MESSI_M20
         #region Get MAC address
         private static PhysicalAddress GetMacAddress()
         {
+            // Wifi
+            //foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
+            //{
+            //    if (nic.OperationalStatus == OperationalStatus.Up && (nic.NetworkInterfaceType == NetworkInterfaceType.Wireless80211))
+            //    {
+            //        return nic.GetPhysicalAddress();
+            //    }
+            //}
+
+            // Ethernet
             foreach (NetworkInterface nic in NetworkInterface.GetAllNetworkInterfaces())
             {
-                if (nic.OperationalStatus == OperationalStatus.Up && (nic.NetworkInterfaceType == NetworkInterfaceType.Wireless80211))
+                if (nic.OperationalStatus == OperationalStatus.Up && (nic.NetworkInterfaceType == NetworkInterfaceType.Ethernet))
                 {
                     return nic.GetPhysicalAddress();
                 }
             }
+
             return null;
         }
         #endregion
@@ -178,6 +191,29 @@ namespace MESSI_M20
             {
                 cmbox_users.Items.Add(users[i]);
             }
+        }
+
+        private void btn_check_Click(object sender, EventArgs e)
+        {
+            dts = new DataSet();
+
+            dts = _Dades.QueryDB("select * from TrustedDevices where MAC='" + GetMacAddress() + "' and Hostname ='" + txt_hostname.Text + "'", "TrustedDevices");
+
+            if (dts.Tables[0].Rows[0]["Trusted"].Equals("1"))
+            {
+                comprovarDispositiu = true;
+            }
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            if (comprovarDispositiu)
+            {
+
+            }
+
+            AddUpdateAppSettings("", cmbox_users.Text);
+            ReadAllSettings();
         }
     }
 }

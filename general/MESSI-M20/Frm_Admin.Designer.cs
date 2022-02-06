@@ -69,7 +69,7 @@
             this.panel1.Controls.Add(this.pnl_left);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(425, 504);
             this.panel1.TabIndex = 0;
@@ -79,7 +79,7 @@
             this.pnl_code.Controls.Add(this.txt_box_code);
             this.pnl_code.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_code.Location = new System.Drawing.Point(111, 397);
-            this.pnl_code.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_code.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_code.Name = "pnl_code";
             this.pnl_code.Size = new System.Drawing.Size(213, 83);
             this.pnl_code.TabIndex = 6;
@@ -94,6 +94,7 @@
             this.txt_box_code.Location = new System.Drawing.Point(32, 21);
             this.txt_box_code.MaxLength = 4;
             this.txt_box_code.Name = "txt_box_code";
+            this.txt_box_code.PasswordChar = '*';
             this.txt_box_code.ReadOnly = true;
             this.txt_box_code.Size = new System.Drawing.Size(154, 44);
             this.txt_box_code.TabIndex = 1;
@@ -104,7 +105,7 @@
             this.pnl_keypad.Controls.Add(this.tableLayoutPanel1);
             this.pnl_keypad.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_keypad.Location = new System.Drawing.Point(111, 137);
-            this.pnl_keypad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_keypad.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_keypad.Name = "pnl_keypad";
             this.pnl_keypad.Size = new System.Drawing.Size(213, 260);
             this.pnl_keypad.TabIndex = 5;
@@ -325,7 +326,7 @@
             this.pnl_coord.Controls.Add(this.lbl_coord);
             this.pnl_coord.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_coord.Location = new System.Drawing.Point(111, 35);
-            this.pnl_coord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_coord.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_coord.Name = "pnl_coord";
             this.pnl_coord.Size = new System.Drawing.Size(213, 102);
             this.pnl_coord.TabIndex = 4;
@@ -347,7 +348,7 @@
             // 
             this.pnl_down.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnl_down.Location = new System.Drawing.Point(111, 480);
-            this.pnl_down.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_down.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_down.Name = "pnl_down";
             this.pnl_down.Size = new System.Drawing.Size(213, 24);
             this.pnl_down.TabIndex = 3;
@@ -356,7 +357,7 @@
             // 
             this.pnl_up.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_up.Location = new System.Drawing.Point(111, 0);
-            this.pnl_up.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_up.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_up.Name = "pnl_up";
             this.pnl_up.Size = new System.Drawing.Size(213, 35);
             this.pnl_up.TabIndex = 2;
@@ -365,7 +366,7 @@
             // 
             this.pnl_right.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnl_right.Location = new System.Drawing.Point(324, 0);
-            this.pnl_right.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_right.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_right.Name = "pnl_right";
             this.pnl_right.Size = new System.Drawing.Size(101, 504);
             this.pnl_right.TabIndex = 1;
@@ -374,7 +375,7 @@
             // 
             this.pnl_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_left.Location = new System.Drawing.Point(0, 0);
-            this.pnl_left.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnl_left.Margin = new System.Windows.Forms.Padding(2);
             this.pnl_left.Name = "pnl_left";
             this.pnl_left.Size = new System.Drawing.Size(111, 504);
             this.pnl_left.TabIndex = 0;
@@ -386,7 +387,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
             this.ClientSize = new System.Drawing.Size(425, 504);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Admin";
             this.Text = "Frm_Admin";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_Admin_FormClosing);

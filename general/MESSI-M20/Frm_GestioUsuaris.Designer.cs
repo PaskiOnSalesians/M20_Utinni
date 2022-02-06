@@ -54,40 +54,40 @@ namespace MESSI_M20
             this.panel1.Controls.Add(this.labelHostName);
             this.panel1.Controls.Add(this.labelMac);
             this.panel1.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(59, 98);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Location = new System.Drawing.Point(44, 80);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(721, 130);
+            this.panel1.Size = new System.Drawing.Size(541, 106);
             this.panel1.TabIndex = 0;
             // 
             // cmbox_users
             // 
             this.cmbox_users.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbox_users.FormattingEnabled = true;
-            this.cmbox_users.Location = new System.Drawing.Point(487, 18);
-            this.cmbox_users.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbox_users.Location = new System.Drawing.Point(365, 15);
+            this.cmbox_users.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbox_users.Name = "cmbox_users";
-            this.cmbox_users.Size = new System.Drawing.Size(183, 37);
+            this.cmbox_users.Size = new System.Drawing.Size(138, 32);
             this.cmbox_users.TabIndex = 1;
             // 
             // txt_hostname
             // 
             this.txt_hostname.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_hostname.Location = new System.Drawing.Point(149, 78);
-            this.txt_hostname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_hostname.Location = new System.Drawing.Point(112, 63);
+            this.txt_hostname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_hostname.Name = "txt_hostname";
             this.txt_hostname.ReadOnly = true;
-            this.txt_hostname.Size = new System.Drawing.Size(203, 36);
+            this.txt_hostname.Size = new System.Drawing.Size(153, 30);
             this.txt_hostname.TabIndex = 4;
             // 
             // txtbox_mac
             // 
             this.txtbox_mac.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbox_mac.Location = new System.Drawing.Point(149, 18);
-            this.txtbox_mac.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtbox_mac.Location = new System.Drawing.Point(112, 15);
+            this.txtbox_mac.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbox_mac.Name = "txtbox_mac";
             this.txtbox_mac.ReadOnly = true;
-            this.txtbox_mac.Size = new System.Drawing.Size(203, 36);
+            this.txtbox_mac.Size = new System.Drawing.Size(153, 30);
             this.txtbox_mac.TabIndex = 3;
             // 
             // labelUser
@@ -95,9 +95,10 @@ namespace MESSI_M20
             this.labelUser.AutoSize = true;
             this.labelUser.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUser.ForeColor = System.Drawing.Color.White;
-            this.labelUser.Location = new System.Drawing.Point(423, 26);
+            this.labelUser.Location = new System.Drawing.Point(317, 21);
+            this.labelUser.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(45, 29);
+            this.labelUser.Size = new System.Drawing.Size(36, 24);
             this.labelUser.TabIndex = 2;
             this.labelUser.Text = "User";
             // 
@@ -106,9 +107,10 @@ namespace MESSI_M20
             this.labelHostName.AutoSize = true;
             this.labelHostName.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHostName.ForeColor = System.Drawing.Color.White;
-            this.labelHostName.Location = new System.Drawing.Point(48, 81);
+            this.labelHostName.Location = new System.Drawing.Point(36, 66);
+            this.labelHostName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelHostName.Name = "labelHostName";
-            this.labelHostName.Size = new System.Drawing.Size(88, 29);
+            this.labelHostName.Size = new System.Drawing.Size(72, 24);
             this.labelHostName.TabIndex = 1;
             this.labelHostName.Text = "HostName";
             // 
@@ -117,9 +119,10 @@ namespace MESSI_M20
             this.labelMac.AutoSize = true;
             this.labelMac.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMac.ForeColor = System.Drawing.Color.White;
-            this.labelMac.Location = new System.Drawing.Point(48, 26);
+            this.labelMac.Location = new System.Drawing.Point(36, 21);
+            this.labelMac.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelMac.Name = "labelMac";
-            this.labelMac.Size = new System.Drawing.Size(57, 29);
+            this.labelMac.Size = new System.Drawing.Size(48, 24);
             this.labelMac.TabIndex = 0;
             this.labelMac.Text = "M.A.C.";
             // 
@@ -130,13 +133,14 @@ namespace MESSI_M20
             this.btn_check.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_check.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_check.ForeColor = System.Drawing.Color.White;
-            this.btn_check.Location = new System.Drawing.Point(59, 254);
-            this.btn_check.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_check.Location = new System.Drawing.Point(44, 206);
+            this.btn_check.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_check.Name = "btn_check";
-            this.btn_check.Size = new System.Drawing.Size(105, 42);
+            this.btn_check.Size = new System.Drawing.Size(79, 34);
             this.btn_check.TabIndex = 1;
             this.btn_check.Text = "Check";
             this.btn_check.UseVisualStyleBackColor = false;
+            this.btn_check.Click += new System.EventHandler(this.btn_check_Click);
             // 
             // btn_register
             // 
@@ -145,10 +149,10 @@ namespace MESSI_M20
             this.btn_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_register.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_register.ForeColor = System.Drawing.Color.White;
-            this.btn_register.Location = new System.Drawing.Point(184, 254);
-            this.btn_register.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_register.Location = new System.Drawing.Point(138, 206);
+            this.btn_register.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_register.Name = "btn_register";
-            this.btn_register.Size = new System.Drawing.Size(105, 42);
+            this.btn_register.Size = new System.Drawing.Size(79, 34);
             this.btn_register.TabIndex = 2;
             this.btn_register.Text = "Register";
             this.btn_register.UseVisualStyleBackColor = false;
@@ -161,13 +165,14 @@ namespace MESSI_M20
             this.btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_delete.Font = new System.Drawing.Font("Dubai", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.ForeColor = System.Drawing.Color.White;
-            this.btn_delete.Location = new System.Drawing.Point(315, 254);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_delete.Location = new System.Drawing.Point(236, 206);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(105, 42);
+            this.btn_delete.Size = new System.Drawing.Size(79, 34);
             this.btn_delete.TabIndex = 3;
             this.btn_delete.Text = "Delete";
             this.btn_delete.UseVisualStyleBackColor = false;
+            this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
             // 
             // btn_return
             // 
@@ -179,10 +184,9 @@ namespace MESSI_M20
             this.btn_return.ForeColor = System.Drawing.Color.White;
             this.btn_return.Image = ((System.Drawing.Image)(resources.GetObject("btn_return.Image")));
             this.btn_return.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_return.Location = new System.Drawing.Point(13, 14);
-            this.btn_return.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_return.Location = new System.Drawing.Point(10, 11);
             this.btn_return.Name = "btn_return";
-            this.btn_return.Size = new System.Drawing.Size(128, 42);
+            this.btn_return.Size = new System.Drawing.Size(96, 34);
             this.btn_return.TabIndex = 4;
             this.btn_return.Text = "BACK";
             this.btn_return.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -191,16 +195,16 @@ namespace MESSI_M20
             // 
             // Frm_GestioUsuaris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(41)))), ((int)(((byte)(41)))));
-            this.ClientSize = new System.Drawing.Size(901, 473);
+            this.ClientSize = new System.Drawing.Size(676, 384);
             this.Controls.Add(this.btn_return);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_register);
             this.Controls.Add(this.btn_check);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Frm_GestioUsuaris";
             this.Text = "Trusted Users";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Frm_GestioUsuaris_FormClosing);
